@@ -4,54 +4,66 @@ title: Sponsors
 gold_sponsors:
 - {
 image: assets/images/sponsors/gold/imc.png,
-name: IMC
+name: IMC,
+url: "https://careers.imc.com/ap/en"
 }
 - {
 image: assets/images/sponsors/gold/coles.png,
-name: Coles
+name: Coles,
+url: "https://careers.colesgroup.com.au/"
 }
 - {
 image: assets/images/sponsors/gold/rea-group.png,
-name: REA Group
+name: REA Group,
+url: "https://www.rea-group.com/careers/"
 }
 - {
 image: assets/images/sponsors/gold/carsales.jpg,
-name: carsales.com.au
+name: carsales.com.au,
+url: "https://www.carsales.com.au/work-with-us"
 }
 silver_sponsors:
 - {
 image: assets/images/sponsors/silver/readygrad.svg,
-name: Readygrad
+name: Readygrad,
+url: "https://www.readygrad.com.au/"
 }
 - {
 image: assets/images/sponsors/silver/jane-street.png,
-name: Jane Street
+name: Jane Street,
+url: "https://www.janestreet.com/join-jane-street/"
 }
 - {
 image: assets/images/sponsors/silver/atlassian.png,
-name: Atlassian
+name: Atlassian,
+url: "https://www.atlassian.com/company/careers"
 }
 - {
 image: assets/images/sponsors/silver/accenture.png,
-name: Accenture
+name: Accenture,
+url: "https://www.accenture.com/au-en/careers"
 }
 bronze_sponsors:
 - {
 image: assets/images/sponsors/bronze/facebook.png,
-name: Facebook
+name: Facebook,
+url: "https://www.facebook.com/careers/"
 }
 - {
 image: assets/images/sponsors/bronze/bosch.png,
-name: Bosch
+name: Bosch,
+url: "https://www.bosch.com.au/careers/why-bosch/"
 }
 - {
 image: assets/images/sponsors/bronze/bcg.png,
-name: BCG
+name: BCG,
+url: "https://www.bcg.com/en-au/careers/students"
 }
 ---
-<div id="contentBoxSecondary">
+<div>
 	<h2>Platinum</h2>
-	<img style="height: 50px;" src="assets/images/sponsors/platinum/reecetech.png" alt="reecetech" />
+	<a href="https://reecetech.com.au/" target="_blank"><img style="height: 50px;"
+			src="assets/images/sponsors/platinum/reecetech.png" alt="reecetech" /></a>
 	<p>Reece is an Australian story of innovation, growth and success. You probably know us as Australia’s largest
 		supplier of plumbing and bathroom products. We have been around for almost 100 years, and building on our
 		success in Australia we have recently planted our flag in the USA. As of today we employ over 8,000 people
@@ -62,14 +74,17 @@ name: BCG
 		success over the next 15 years. And you can be a part of it!</p>
 	<h2>Gold</h2>
 	{% for sponsor in page.gold_sponsors %}
-	<img class="sponsorImg" src="{{sponsor.image}}" alt="{{sponsor.name}}" />
+	<a href="{{sponsor.url}}" target="_blank"><img class="sponsorImg" src="{{sponsor.image}}"
+			alt="{{sponsor.name}}" /></a>
 	{% endfor %}
 	<h2>Silver</h2>
 	{% for sponsor in page.silver_sponsors %}
-	<img class="sponsorImg" src="{{sponsor.image}}" alt="{{sponsor.name}}" />
+	<a href="{{sponsor.url}}" target="_blank"><img class="sponsorImg" src="{{sponsor.image}}"
+			alt="{{sponsor.name}}" /></a>
 	{% endfor %}
 	<h2>Bronze</h2>
 	{% for sponsor in page.bronze_sponsors %}
-	<img class="sponsorImg" src="{{sponsor.image}}" alt="{{sponsor.name}}" />
+	<a href="{{sponsor.url}}" target="_blank"><img class="sponsorImg" src="{{sponsor.image}}"
+			alt="{{sponsor.name}}" /></a>
 	{% endfor %}
 </div>
