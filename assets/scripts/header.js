@@ -39,5 +39,12 @@ function hasScrolled() {
     // header.classList.add("slideDown");
   }
 
+  // If at top, make transparent
+  if (pageTitle === "Home" && scrollY === 0) {
+    header.classList.add("header-transparent");
+  } else {
+    header.classList.remove("header-transparent");
+  }
+
   lastScrollY = scrollY;
 }

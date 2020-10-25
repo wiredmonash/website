@@ -48,6 +48,9 @@
 </head>
 
 <body>
+    <script>
+        var pageTitle = "{{ page.title }}"
+    </script>
     {% include header.html %}
     {% if page.title == "Home" %}
     {{ content }}
