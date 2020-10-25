@@ -51,12 +51,15 @@ a.logo-link {
   height: 2.5rem;
 }
 
-a.logo-link > img {
-  height: 100%;
+a.fade-in {
   -webkit-animation: titleFadeIn 1s;
   -moz-animation: titleFadeInIn 1s;
   -o-animation: titleFadeIn 1s;
   animation: titleFadeIn 1s;
+}
+
+a.logo-link > img {
+  height: 100%;
 }
 
 /* Home Page */
