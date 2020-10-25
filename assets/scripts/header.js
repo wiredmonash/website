@@ -2,11 +2,10 @@
 // Adapted from https://jsfiddle.net/mariusc23/s6mLJ/31/
 
 var didScroll = false;
-var lastScrollY = 0;
+var lastScrollY;
 var delta = 5;
 var header = document.getElementById("site-header");
 var headerHeight = header.offsetHeight;
-console.log(headerHeight);
 
 document.addEventListener("scroll", () => {
   didScroll = true;
@@ -19,6 +18,10 @@ setInterval(() => {
 }, 250);
 
 function hasScrolled() {
+  if (typeof lastScrollY !== "number") {
+    lastScrollY = window.scrollY;
+    return;
+  }
   let scrollY = window.scrollY;
 
   // Make sure they scroll more than delta
@@ -27,12 +30,13 @@ function hasScrolled() {
   // If they scrolled down and are past the navbar, add class .nav-up.
   // This is necessary so you never see what is "behind" the navbar.
   if (scrollY > lastScrollY && scrollY > headerHeight) {
-    // Scroll Down
-    header.classList.remove("slideDown");
-    header.classList.add("slideUp");
-  } else if (scrollY + window.innerHeight < document.body.clientHeight) {
-    header.classList.remove("slideUp");
-    header.classList.add("slideDown");
+    // First scroll up after refresh OR Scroll Down
+    // header.classList.remove("slideDown");
+    header.classList.add("header-hidden");
+  } else if (scrollY < lastScrollY) {
+    // Scroll up
+    header.classList.remove("header-hidden");
+    // header.classList.add("slideDown");
   }
 
   lastScrollY = scrollY;

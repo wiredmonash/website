@@ -4,46 +4,23 @@
   top: 0;
   width: 100%;
   will-change: transform;
-  animation-duration: 0.3s;
-  animation-fill-mode: both;
+  transition: transform 0.3s background-color 0.3s;
+  height: 4.5rem;
+  padding: 1rem min(3rem, 10vw);
+  background-color: #6e297e;
 }
 
-.slideUp {
-  animation-name: slideUp;
-}
-
-@keyframes slideUp {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-100%);
-  }
-}
-
-.slideDown {
-  animation-name: slideDown;
-}
-
-@keyframes slideDown {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
+#site-header.header-hidden {
+  transform: translateY(-100%);
 }
 
 nav {
+  height: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-right: min(3rem, 10vw);
-  min-height: 4.5rem;
 }
 
 nav > a {
@@ -59,10 +36,6 @@ nav > a + a {
 
 /* Non-home pages */
 
-.nav-secondary {
-  background-color: #6e297e;
-}
-
 a.logo-link {
   padding-top: 0;
   padding-bottom: 0;
@@ -73,21 +46,13 @@ a.logo-link {
 
 a.logo-link > img {
   height: 100%;
+  -webkit-animation: titleFadeIn 1s;
+  -moz-animation: titleFadeInIn 1s;
+  -o-animation: titleFadeIn 1s;
+  animation: titleFadeIn 1s;
 }
 
 /* Home Page */
-.nav-home {
-  position: absolute;
-  top: 0;
-  right: 0;
-  -webkit-animation: titleFadeIn 4.5s;
-  -moz-animation: titleFadeInIn 4.5s;
-  -o-animation: titleFadeIn 4.5s;
-  animation: titleFadeIn 4.5s;
-  z-index: 1;
-  padding-left: 2.5rem;
-  max-width: calc(100% - min(40%, 20rem));
-}
 
 img#title {
   -webkit-animation: titleFadeIn 4.5s;
@@ -111,10 +76,6 @@ img#title {
     flex-grow: 0;
     width: 100%;
     text-align: center;
-  }
-
-  .nav-home {
-    max-width: 100%;
   }
 
   img#title {
