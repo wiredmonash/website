@@ -84,13 +84,6 @@ a.logo-link {
   text-align: left;
 }
 
-a.fade-in {
-  -webkit-animation: titleFadeIn 1s;
-  -moz-animation: titleFadeInIn 1s;
-  -o-animation: titleFadeIn 1s;
-  animation: titleFadeIn 1s;
-}
-
 a.logo-link > img {
   height: 100%;
 }
@@ -127,33 +120,11 @@ a.logo-link > img {
   filter: grayscale(100%) brightness(0) invert(100%);
 }
 
-/* Home Page */
-
-img#title {
-  -webkit-animation: titleFadeIn 4.5s;
-  -moz-animation: titleFadeInIn 4.5s;
-  -o-animation: titleFadeIn 4.5s;
-  animation: titleFadeIn 4.5s;
-  position: absolute;
-  top: 1rem;
-  left: $gutter-padding;
-  width: min(40%, 20rem);
-  height: auto;
-}
-
 /* Mobile */
 @media only screen and (max-width: 480px) {
   a.logo-link {
     flex-grow: 0;
     width: 100%;
-  }
-
-  img#title {
-    margin-top: 50%;
-    top: 0;
-    width: 70%;
-    left: 15%;
-    right: 85%;
   }
 
   .nav-site {
