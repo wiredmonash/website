@@ -88,16 +88,4 @@ p {
 
 /* Mobile */
 @media only screen and (max-width: 480px) {
-  #membershipPerks {
-    width: 100%;
-  }
-
-  #membershipPerks > tbody > tr > td {
-    display: block;
-  }
-
-  #membershipPerks > tbody > tr > td > img {
-    display: block;
-    width: 100%;
-  }
 }
