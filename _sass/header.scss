@@ -9,7 +9,7 @@ $header-side-width: 120px;
 
 @mixin header-side {
   @include header-vertical-margins;
-  flex-basis: 130px;
+  flex-basis: 120px;
   flex-shrink: 0;
 }
 
@@ -76,13 +76,14 @@ a.logo-link > img {
 .nav-site {
   flex-grow: 1;
   flex-basis: initial;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .nav-site a {
   margin-top: 0.35rem;
   margin-bottom: 0.35rem;
   padding: 0 1rem;
+  white-space: nowrap;
 }
 
 // Social links
@@ -130,6 +131,10 @@ img#title {
     width: 70%;
     left: 15%;
     right: 85%;
+  }
+
+  .nav-site {
+    justify-content: space-around;
   }
 }
 
