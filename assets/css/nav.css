@@ -8,7 +8,7 @@ nav {
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-right: min(3rem, 10vw);
-  min-height: 4rem;
+  min-height: 4.5rem;
 }
 
 nav > a {
@@ -45,14 +45,13 @@ a.logo-link > img {
   position: absolute;
   top: 0;
   right: 0;
-  list-style: none;
   -webkit-animation: titleFadeIn 4.5s;
   -moz-animation: titleFadeInIn 4.5s;
   -o-animation: titleFadeIn 4.5s;
   animation: titleFadeIn 4.5s;
   z-index: 1;
   padding-left: 2.5rem;
-  max-width: 60%;
+  max-width: calc(100% - min(40%, 20rem));
 }
 
 img#title {
@@ -61,8 +60,9 @@ img#title {
   -o-animation: titleFadeIn 4.5s;
   animation: titleFadeIn 4.5s;
   position: absolute;
-  top: 0;
-  width: 40%;
+  top: 1rem;
+  left: min(3rem, 10vw);
+  width: min(40%, 20rem);
   height: auto;
 }
 
@@ -84,6 +84,9 @@ img#title {
 
   img#title {
     margin-top: 50%;
-    width: 100%;
+    top: 0;
+    width: 70%;
+    left: 15%;
+    right: 85%;
   }
 }

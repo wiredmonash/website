@@ -2,6 +2,12 @@
 @import "motion.css";
 @import "nav.css";
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   /* Fix content jumping issue */
   overflow-y: scroll;
