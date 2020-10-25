@@ -1,4 +1,39 @@
 /* Common */
+#site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  will-change: transform;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
+
+.slideUp {
+  animation-name: slideUp;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.slideDown {
+  animation-name: slideDown;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 nav {
   display: flex;
   flex-direction: row;
