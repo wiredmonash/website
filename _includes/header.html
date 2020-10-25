@@ -1,6 +1,6 @@
-<header id="site-header">
-    <nav class="{% if page.title == "Home" %}nav-home{% else %}nav-secondary{% endif %}">
-        <a href="/" class="logo-link"><img src="assets/images/logoWhite.png" alt="WIRED"></a>
+<header id="site-header" class="{% if page.title == "Home" %}header-transparent{% endif %}">
+    <nav>
+        <a href="/" class="logo-link"><img src="assets/images/logoWhite.png" alt="WIRED" height="40"></a>
         <a href="/join">Join Us</a>
         <a href="/events">Events</a>
         <a href="/discord">Discord</a>
@@ -10,3 +10,6 @@
 </header>
 <script type="text/javascript" src="assets/scripts/header.js">
 </script>
+{% if page.title == "Home" %}
+<script src="assets/scripts/headerTransparent.js"></script>
+{% endif %}
