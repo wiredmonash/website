@@ -2,7 +2,13 @@
 
 $header-side-width: 120px;
 
+@mixin header-vertical-margins {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 @mixin header-side {
+  @include header-vertical-margins;
   flex-basis: 120px;
   flex-shrink: 0;
 }
@@ -19,7 +25,7 @@ $header-side-width: 120px;
   will-change: transform;
   transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
   min-height: 4rem;
-  padding: 0.75em $gutter-padding;
+  padding: 0.25rem $gutter-padding;
   background-color: $wired-purple;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4), 0 6px 5px 0 rgba(0, 0, 0, 0.1);
   z-index: 1;
@@ -52,8 +58,6 @@ nav {
 // Logo styles
 a.logo-link {
   @include header-side;
-  padding-top: 0;
-  padding-bottom: 0;
   height: 1.5rem;
 }
 
@@ -72,10 +76,13 @@ a.logo-link > img {
 .nav-site {
   flex-grow: 1;
   flex-basis: initial;
+  justify-content: space-evenly;
 }
 
 .nav-site a {
-  padding: 0.25rem 1rem;
+  margin-top: 0.35rem;
+  margin-bottom: 0.35rem;
+  padding: 0 1rem;
 }
 
 // Social links
