@@ -13,7 +13,7 @@ a {
   color: #a23db2;
 }
 
-#contentBox {
+.content-home {
   background-color: #fff;
   padding: 50px;
   position: absolute;
@@ -23,21 +23,29 @@ a {
   min-height: 100%;
 }
 
-#contentBoxSecondary {
-  padding: 50px;
+.content-secondary {
+  padding: 3rem;
 }
 
 .sponsorImg {
-  height: 50px;
-  margin: 20px;
+  height: 3rem;
+  margin: 1.25rem;
+}
+
+h1 {
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 30pt;
+  font-size: 2.25rem;
 }
 
 h3 {
-  font-size: 25pt;
+  font-size: 1.5rem;
+}
+
+p {
+  line-height: 1.6;
 }
 
 #membershipPerks {
@@ -61,6 +69,7 @@ h3 {
   height: 100%;
   background-color: #6e297e;
   position: fixed;
+  z-index: -1;
 }
 
 #footer {
@@ -80,17 +89,6 @@ h3 {
 
 /* Mobile */
 @media only screen and (max-width: 480px) {
-  p,
-  a,
-  li {
-    font-size: 15pt;
-  }
-
-  #homeNav {
-    top: 0;
-    max-width: 100%;
-  }
-
   #membershipPerks {
     width: 100%;
   }
@@ -102,37 +100,5 @@ h3 {
   #membershipPerks > tbody > tr > td > img {
     display: block;
     width: 100%;
-  }
-
-  h2 {
-    font-size: 25pt;
-  }
-
-  h3 {
-    font-size: 20pt;
-  }
-
-  #nav {
-    height: 80px;
-  }
-
-  #nav > table > tbody > tr > td > a {
-    display: none;
-  }
-
-  #nav > table > tbody > tr > td > ul {
-    margin-top: 10px;
-  }
-
-  #nav > table > tbody > tr > td > ul > li {
-    margin: 15px;
-  }
-
-  #nav > table > tbody > tr > td > ul > li > a {
-    font-size: 15pt;
-  }
-
-  #homeImg {
-    display: none;
   }
 }

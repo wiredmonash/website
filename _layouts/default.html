@@ -38,7 +38,9 @@
 
 <body>
     {% include navbar.html %}
-    {{ content }}
+    <div class="{%if page.title != "Home" %}content-secondary{%endif %}">
+        {{ content }}
+    </div>
 </body>
 
 </html>
