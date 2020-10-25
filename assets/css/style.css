@@ -2,33 +2,48 @@
 @import "motion.css";
 @import "nav.css";
 
+html {
+  /* Fix content jumping issue */
+  overflow-y: scroll;
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: "Nunito", Futura, "Avenir Next", Avenir, "Century Gothic",
     "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
   color: #a23db2;
 }
 
-.content-home {
+.container-home {
   background-color: #fff;
-  padding: 50px;
   position: absolute;
   left: 0;
   right: 0;
   top: 100%;
   min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
 }
 
-.content-wrapper {
-  max-width: 1200px;
+.content {
+  flex-grow: 1;
+  width: 100%;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
   padding: min(3rem, 10vw);
   padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .sponsorImg {
@@ -71,21 +86,25 @@ p {
   z-index: -1;
 }
 
-#footer {
-  position: absolute;
-  bottom: 0;
+footer {
+  align-self: flex-end;
   width: 100%;
   text-align: center;
-  font-size: 8pt;
-  z-index: 1;
-  left: 0;
-  right: 0;
+  font-size: 0.75rem;
+  opacity: 0.8;
+  margin-bottom: 1rem;
 }
 
-#footer > a {
-  font-size: 8pt;
+#homeImg {
+  width: 400px;
+  float: right;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* Mobile */
 @media only screen and (max-width: 480px) {
+  #homeImg {
+    width: 100%;
+  }
 }

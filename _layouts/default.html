@@ -38,9 +38,14 @@
 
 <body>
     {% include navbar.html %}
-    <div class="{%if page.title != "Home" %}content-wrapper{%endif %}">
+    {% if page.title == "Home" %}
+    {{ content }}
+    {% else %}
+    <div class="content">
         {{ content }}
     </div>
+    {% include footer.html %}
+    {% endif %}
 </body>
 
 </html>

@@ -7,7 +7,7 @@ nav {
   align-items: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  padding-right: 1.5rem;
+  padding-right: min(3rem, 10vw);
   min-height: 4rem;
 }
 
