@@ -1,6 +1,53 @@
 ---
 layout: default
 title: Sponsors
+gold_sponsors:
+- {
+image: assets/images/sponsors/gold/imc.png,
+name: IMC
+}
+- {
+image: assets/images/sponsors/gold/coles.png,
+name: Coles
+}
+- {
+image: assets/images/sponsors/gold/rea-group.png,
+name: REA Group
+}
+- {
+image: assets/images/sponsors/gold/carsales.jpg,
+name: carsales.com.au
+}
+silver_sponsors:
+- {
+image: assets/images/sponsors/silver/readygrad.svg,
+name: Readygrad
+}
+- {
+image: assets/images/sponsors/silver/jane-street.png,
+name: Jane Street
+}
+- {
+image: assets/images/sponsors/silver/atlassian.png,
+name: Atlassian
+}
+- {
+image: assets/images/sponsors/silver/accenture.png,
+name: Accenture
+}
+bronze_sponsors:
+- {
+image: assets/images/sponsors/bronze/facebook.png,
+name: Facebook
+}
+- {
+image: assets/images/sponsors/bronze/bosch.png,
+name: Bosch
+}
+- {
+image: assets/images/sponsors/bronze/bcg.png,
+name: BCG
+}
 ---
 <div id="contentBoxSecondary">
 	<h2>Platinum</h2>
@@ -14,17 +61,15 @@ title: Sponsors
 		Our aim is to have a world-class, in-house technology capability that will underpin the next chapter of our
 		success over the next 15 years. And you can be a part of it!</p>
 	<h2>Gold</h2>
-	<img class="sponsorImg" src="assets/images/sponsors/gold/imc.png" alt="REA Group" />
-	<img class="sponsorImg" src="assets/images/sponsors/gold/coles.png" alt="Coles" />
-	<img class="sponsorImg" src="assets/images/sponsors/gold/rea-group.png" alt="REA Group" />
-	<img class="sponsorImg" src="assets/images/sponsors/gold/carsales.jpg" alt="caresales.com.au" />
+	{% for sponsor in page.gold_sponsors %}
+	<img class="sponsorImg" src="{{sponsor.image}}" alt="{{sponsor.name}}" />
+	{% endfor %}
 	<h2>Silver</h2>
-	<img class="sponsorImg" src="assets/images/sponsors/silver/readygrad.svg" alt="Readygrad" />
-	<img class="sponsorImg" src="assets/images/sponsors/silver/jane-street.png" alt="Jane Street" />
-	<img class="sponsorImg" src="assets/images/sponsors/silver/atlassian.png" alt="Atlassian" />
-	<img class="sponsorImg" src="assets/images/sponsors/silver/accenture.png" alt="accenture" />
+	{% for sponsor in page.silver_sponsors %}
+	<img class="sponsorImg" src="{{sponsor.image}}" alt="{{sponsor.name}}" />
+	{% endfor %}
 	<h2>Bronze</h2>
-	<img class="sponsorImg" src="assets/images/sponsors/bronze/facebook.png" alt="Facebook" />
-	<img class="sponsorImg" src="assets/images/sponsors/bronze/bosch.png" alt="Bosch" />
-	<img class="sponsorImg" src="assets/images/sponsors/bronze/bcg.png" alt="BCG" />
+	{% for sponsor in page.bronze_sponsors %}
+	<img class="sponsorImg" src="{{sponsor.image}}" alt="{{sponsor.name}}" />
+	{% endfor %}
 </div>
