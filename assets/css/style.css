@@ -23,7 +23,10 @@ a {
   min-height: 100%;
 }
 
-.content-secondary {
+.content-wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 3rem;
 }
 
@@ -48,20 +51,15 @@ p {
   line-height: 1.6;
 }
 
-#membershipPerks {
-  width: 40%;
-  margin-left: auto;
-  margin-right: auto;
+.membershipPerks {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  justify-items: center;
 }
 
-#membershipPerks > tbody > tr > td > h3 {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-#membershipPerks > tbody > tr > td > p {
-  margin-top: 0;
-  margin-bottom: 30px;
+.membershipPerks img {
+  width: 100%;
 }
 
 #particles-js {
