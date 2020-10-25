@@ -120,9 +120,51 @@ footer {
   margin-bottom: 1rem;
 }
 
+/* Home Page */
+.landing-message {
+  position: absolute;
+  @include fade-in(4s);
+  color: #fff;
+  font-family: $heading-font-family;
+  font-weight: 900;
+  font-size: 5rem;
+  top: min(17rem, 35%);
+  padding: 4rem;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.particles-js-canvas-el {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.landing-message span {
+  text-align: center;
+}
+
+.landing-message img {
+  height: 1em;
+  width: auto;
+  // Adjust margin to align image
+  margin-bottom: -0.1em;
+}
+
 /* Mobile */
 @media only screen and (max-width: 480px) {
   #homeImg {
     width: 100%;
+  }
+
+  .landing-message {
+    font-size: 4rem;
   }
 }
