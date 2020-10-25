@@ -1,5 +1,4 @@
-@import "motion.css";
-@import "header.css";
+@import "shared";
 
 *,
 *::before,
@@ -46,7 +45,7 @@ a {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
-  padding: min(3rem, 10vw);
+  padding: $gutter-padding;
   padding-top: 1rem;
   display: flex;
   flex-direction: column;
@@ -88,7 +87,7 @@ p {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #6e297e;
+  background-color: $wired-purple;
   position: fixed;
   z-index: -1;
 }
@@ -100,7 +99,7 @@ footer {
   font-size: 0.75rem;
   opacity: 0.8;
   margin-bottom: 1rem;
-  padding: 0 min(3rem, 10vw);
+  padding: 0 $gutter-padding;
 }
 
 #homeImg {

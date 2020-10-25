@@ -1,3 +1,5 @@
+@import "shared";
+
 /* Common */
 #site-header {
   position: fixed;
@@ -6,8 +8,8 @@
   will-change: transform;
   transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
   min-height: 4.5rem;
-  padding: 1rem min(3rem, 10vw);
-  background-color: #6e297e;
+  padding: 1rem $gutter-padding;
+  background-color: $wired-purple;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4), 0 6px 5px 0 rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
@@ -70,7 +72,7 @@ img#title {
   animation: titleFadeIn 4.5s;
   position: absolute;
   top: 1rem;
-  left: min(3rem, 10vw);
+  left: $gutter-padding;
   width: min(40%, 20rem);
   height: auto;
 }
