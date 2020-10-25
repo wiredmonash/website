@@ -45,6 +45,23 @@ $header-side-width: 120px;
 header a {
   color: white;
   text-decoration: none;
+  transition: opacity 0.2s, transform 0.2s;
+  will-change: transform;
+}
+
+header a:hover,
+header a:focus,
+header a:active {
+  opacity: 0.8;
+}
+
+header a:hover {
+  transform: scale(1.05);
+}
+
+header a:active {
+  transform: scale(0.95);
+  outline: none;
 }
 
 nav {
