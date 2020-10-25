@@ -29,6 +29,8 @@ $header-side-width: 120px;
   background-color: darken($wired-purple, 2%);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4), 0 6px 5px 0 rgba(0, 0, 0, 0.1);
   z-index: 1;
+  font-family: $heading-font-family;
+  font-weight: 700;
 }
 
 #site-header.header-hidden {
@@ -43,7 +45,6 @@ $header-side-width: 120px;
 header a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
 }
 
 nav {
