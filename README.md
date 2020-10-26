@@ -22,6 +22,9 @@ The default server address is `http://127.0.0.1:4000`. If this port is already t
 - Current breakpoints used for media queries:
   - 480px
   - 768px
+- All pages that you want an entry in the navbar for must have an `order` field in the front matter: this field determines what
+order the navbar entries appear in (lower order values at left, higher order values at right). Only pages with order values >= 1
+will be shown.  
 
 ## Site hosting configuration
 
