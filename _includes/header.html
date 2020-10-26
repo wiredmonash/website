@@ -1,23 +1,23 @@
-<header id="site-header" class="{% if page.title == "Home" %}header-transparent{% endif %}">
-    <a href="{{ '/' | relative_url }}" class="logo-link {% if page.title == "Home" %}fade-in{% endif %}"><img src="assets/images/logoWhite.png"
-            alt="WIRED" height="40"></a>
+<header id="site-header" class="{% if page.title == 'Home' %}header-transparent{% endif %}">
+    <a href="{{ '/' | relative_url }}" class="logo-link"><img alt="WIRED" height="40" src="assets/images/logoWhite.png"></a>
     <nav class="nav-site">
-        {% assign sorted_pages = site.pages | sort:"order" %}
-        {% for node in sorted_pages %}
-        {% if node.order >= 1 %}
-        <a href="{{node.url | relative_url }}" class="{% if page.url == node.url %}page-active{%endif %}">{{node.title}}</a>
-        {% endif %}
-        {% endfor %}
+        <ul>
+            {% assign sorted_pages = site.pages | sort:"order" %}
+            {% for node in sorted_pages %}
+                {% if node.order >= 1 %}
+                    <li>
+                        <a href="{{ node.url | relative_url }}" class="{% if page.url == node.url %}page-active{%endif %}">{{node.title}}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
     </nav>
     <nav class="nav-social">
-        <a href="http://facebook.com/WiredMonash" target="_blank" title="WIRED Facebook"><img
-                src="assets/images/icons/social/logo-facebook.svg" alt="Facebook"></a>
-        <a href="https://discord.gg/XWGeM67" target="_blank" title="WIRED Discord"><img
-                src="assets/images/icons/social/logo-discord.svg" alt="Discord"></a>
-        <a href="https://www.instagram.com/wiredmonash/" target="_blank" title="WIRED Instagram"><img
-                src="assets/images/icons/social/logo-instagram.svg" alt="Instagram"></a>
-
+        <ul>
+            <li><a href="http://facebook.com/WiredMonash" target="_blank" title="WIRED Facebook"><img alt="Facebook" src="assets/images/icons/social/logo-facebook.svg"></a></li>
+            <li><a href="https://discord.gg/XWGeM67" target="_blank" title="WIRED Discord"><img alt="Discord" src="assets/images/icons/social/logo-discord.svg"></a></li>
+            <li><a href="https://www.instagram.com/wiredmonash/" target="_blank" title="WIRED Instagram"><img alt="Instagram" src="assets/images/icons/social/logo-instagram.svg"></a></li>
+        </ul>
     </nav>
 </header>
-<script type="text/javascript" src="assets/scripts/header.js">
-            </script>
+<script src="assets/scripts/header.js" type="text/javascript"></script>

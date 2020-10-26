@@ -1,6 +1,6 @@
 @import "shared";
 
-$header-side-width: 120px;
+$header-side-width: 7.5rem;
 
 @mixin header-vertical-margins {
   margin-top: 0.5rem;
@@ -9,8 +9,7 @@ $header-side-width: 120px;
 
 @mixin header-side {
   @include header-vertical-margins;
-  flex-basis: 120px;
-  flex-shrink: 0;
+  flex-basis: $header-side-width;
 }
 
 /* Common */
@@ -69,12 +68,21 @@ header a.page-active {
   color: #fff;
 }
 
-nav {
+nav ul {
   height: 100%;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+}
+
+nav li {
+  display: flex;
 }
 
 // Logo styles
@@ -92,6 +100,9 @@ a.logo-link > img {
 .nav-site {
   flex-grow: 1;
   flex-basis: initial;
+}
+
+.nav-site ul {
   justify-content: center;
 }
 
@@ -106,6 +117,9 @@ a.logo-link > img {
 .nav-social {
   @include header-side;
   margin-left: auto;
+}
+
+.nav-social ul {
   justify-content: flex-end;
 }
 
@@ -127,7 +141,7 @@ a.logo-link > img {
     width: 100%;
   }
 
-  .nav-site {
+  .nav-site ul {
     justify-content: space-around;
   }
 }
