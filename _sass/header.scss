@@ -1,15 +1,8 @@
 @import "shared";
 
-$header-side-width: 7.5rem;
-
 @mixin header-vertical-margins {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-}
-
-@mixin header-side {
-  @include header-vertical-margins;
-  flex-basis: $header-side-width;
 }
 
 /* Common */
@@ -87,7 +80,8 @@ nav li {
 
 // Logo styles
 a.logo-link {
-  @include header-side;
+  @include header-vertical-margins;
+  max-width: 7.5rem;
   height: 1.5rem;
   text-align: left;
 }
@@ -115,7 +109,7 @@ a.logo-link > img {
 
 // Social links
 .nav-social {
-  @include header-side;
+  @include header-vertical-margins;
   margin-left: auto;
 }
 
