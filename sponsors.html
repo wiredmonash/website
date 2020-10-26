@@ -62,31 +62,17 @@ name: BCG,
 url: "https://www.bcg.com/en-au/careers/students"
 }
 ---
-<div>
-	<h2>Platinum</h2>
-	<a href="https://reecetech.com.au/" target="_blank"><img style="height: 50px;"
-			src="assets/images/sponsors/platinum/reecetech.png" alt="reecetech" /></a>
-	<p>Reece is an Australian story of innovation, growth and success. You probably know us as Australia’s largest
-		supplier of plumbing and bathroom products. We have been around for almost 100 years, and building on our
-		success in Australia we have recently planted our flag in the USA. As of today we employ over 8,000 people
-		across 800 locations in Australia, New Zealand and the US. reecetech is the technology group within Reece, with
-		over 180 team members working on everything from digital products for our customers and staff, to core
-		transaction systems that process billions of dollars a year in sales, to data engineering and infrastructure.
-		Our aim is to have a world-class, in-house technology capability that will underpin the next chapter of our
-		success over the next 15 years. And you can be a part of it!</p>
-	<h2>Gold</h2>
-	{% for sponsor in page.gold_sponsors %}
-	<a href="{{sponsor.url}}" target="_blank"><img class="sponsorImg" src="{{sponsor.image}}"
-			alt="{{sponsor.name}}" /></a>
-	{% endfor %}
-	<h2>Silver</h2>
-	{% for sponsor in page.silver_sponsors %}
-	<a href="{{sponsor.url}}" target="_blank"><img class="sponsorImg" src="{{sponsor.image}}"
-			alt="{{sponsor.name}}" /></a>
-	{% endfor %}
-	<h2>Bronze</h2>
-	{% for sponsor in page.bronze_sponsors %}
-	<a href="{{sponsor.url}}" target="_blank"><img class="sponsorImg" src="{{sponsor.image}}"
-			alt="{{sponsor.name}}" /></a>
-	{% endfor %}
-</div>
+<h2>Platinum</h2>
+<a href="https://reecetech.com.au/" target="_blank"><img style="height: 50px;"
+		src="assets/images/sponsors/platinum/reecetech.png" alt="reecetech" /></a>
+<p>Reece is an Australian story of innovation, growth and success. You probably know us as Australia’s largest
+	supplier of plumbing and bathroom products. We have been around for almost 100 years, and building on our
+	success in Australia we have recently planted our flag in the USA. As of today we employ over 8,000 people
+	across 800 locations in Australia, New Zealand and the US. reecetech is the technology group within Reece, with
+	over 180 team members working on everything from digital products for our customers and staff, to core
+	transaction systems that process billions of dollars a year in sales, to data engineering and infrastructure.
+	Our aim is to have a world-class, in-house technology capability that will underpin the next chapter of our
+	success over the next 15 years. And you can be a part of it!</p>
+{% include sponsor_level.html level='Gold' sponsors=page.gold_sponsors %}
+{% include sponsor_level.html level='Silver' sponsors=page.silver_sponsors %}
+{% include sponsor_level.html level='Bronze' sponsors=page.bronze_sponsors %}
