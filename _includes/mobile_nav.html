@@ -1,0 +1,17 @@
+<div class="mobile-menu">
+  <input type="checkbox" onclick="mobileMenuLockScroll()" />
+  <span></span>
+  <span></span>
+  <span></span>
+  <ul>
+    {% assign sorted_pages = site.pages | sort:"order" %}
+    {% for node in sorted_pages %}
+        {% if node.order >= 1 %}
+            <li>
+                <a href="{{ node.url | relative_url }}" class="mobile-menu-show-active" {% if page.url == node.url %} data-active {%endif %} data-content="{{node.title}}">{{node.title}}</a>
+            </li>
+        {% endif %}
+    {% endfor %}
+  </ul>
+  <div class="dark-overlay" id="dark-overlay"></div>
+</div>

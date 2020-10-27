@@ -21,6 +21,11 @@ body {
   // font-size: 16px;
 }
 
+.lock-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
 .page-container {
   padding-top: 6rem;
   display: flex;

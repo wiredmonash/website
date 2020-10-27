@@ -1,11 +1,5 @@
 <header class="site-header" id="site-header" class="{% if page.title == 'Home' %}header-transparent{% endif %}">
-    <div class="mobile-menu">
-        <input type="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
-
-    </div>
+    {% include mobile_nav.html %}
     <a href="{{ '/' | relative_url }}" title="WIRED Home" class="logo-link opaque-on-hover" {% if page.title == "Home" %} data-force-opaque {% endif %}>
         <img alt="WIRED" height="24" src="assets/images/logoWhite.png" width="100">
     </a>
