@@ -1,5 +1,5 @@
 <header id="site-header" class="{% if page.title == 'Home' %}header-transparent{% endif %}">
-    <a href="{{ '/' | relative_url }}" class="logo-link">
+    <a href="{{ '/' | relative_url }}" title="WIRED Home" class="logo-link opaque-on-hover" {% if page.title == "Home" %}data-force-opaque {% endif %}>
         <img alt="WIRED" height="24" src="assets/images/logoWhite.png" width="100">
     </a>
     <nav class="nav-site">
@@ -8,7 +8,7 @@
             {% for node in sorted_pages %}
                 {% if node.order >= 1 %}
                     <li>
-                        <a href="{{ node.url | relative_url }}" class="{% if page.url == node.url %}page-active{%endif %}" data-content="{{node.title}}">{{node.title}}</a>
+                        <a href="{{ node.url | relative_url }}" class="show-active" {% if page.url == node.url %}data-active{%endif %} data-content="{{node.title}}">{{node.title}}</a>
                     </li>
                 {% endif %}
             {% endfor %}
@@ -16,9 +16,9 @@
     </nav>
     <nav class="nav-social">
         <ul>
-            <li><a href="http://facebook.com/WiredMonash" target="_blank" title="WIRED Facebook"><img alt="Facebook" height="24" src="assets/images/icons/social/logo-facebook.svg" width="24"></a></li>
-            <li><a href="https://discord.gg/WNUDsjQ" target="_blank" title="WIRED Discord"><img alt="Discord" height="24" src="assets/images/icons/social/logo-discord.svg" width="24"></a></li>
-            <li><a href="https://www.instagram.com/wiredmonash/" target="_blank" title="WIRED Instagram"><img alt="Instagram" height="24" src="assets/images/icons/social/logo-instagram.svg" width="24"></a></li>
+            <li><a href="http://facebook.com/WiredMonash" target="_blank" class="opaque-on-hover" title="WIRED Facebook"><img alt="Facebook" height="24" src="assets/images/icons/social/logo-facebook.svg" width="24"></a></li>
+            <li><a href="https://discord.gg/WNUDsjQ" target="_blank" class="opaque-on-hover" title="WIRED Discord"><img alt="Discord" height="24" src="assets/images/icons/social/logo-discord.svg" width="24"></a></li>
+            <li><a href="https://www.instagram.com/wiredmonash/" target="_blank" class="opaque-on-hover" title="WIRED Instagram"><img alt="Instagram" height="24" src="assets/images/icons/social/logo-instagram.svg" width="24"></a></li>
         </ul>
     </nav>
 </header>

@@ -5,7 +5,6 @@
   margin-bottom: 0.5rem;
 }
 
-$active-font-weight: 800;
 $social-icon-size: 1.5rem;
 
 /* Common */
@@ -36,36 +35,55 @@ $social-icon-size: 1.5rem;
 }
 
 header a {
-  color: #ddd;
   text-decoration: none;
-  transition: opacity 0.2s, transform 0.2s;
-  will-change: transform;
   font-weight: 600;
+  text-align: center;
 }
 
-header a:hover,
-header a:focus,
-header a:active {
-  opacity: 0.8;
+.opaque-on-hover {
+  opacity: 0.85;
+  transition: opacity 0.2s;
+  will-change: opacity;
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.95;
+  }
 }
 
-header a:hover {
-  transform: scale(1.05);
+.opaque-on-hover[data-force-opaque] {
+  opacity: 1;
 }
 
-header a:active {
-  transform: scale(0.95);
+$active-font-weight: 600;
+
+.show-active {
+  color: rgba(#fff, 0.8);
+  transition: color 0.2s, border-color 0.2s;
+  border-bottom: 2px solid transparent;
+  padding: 0 0.1rem;
+  margin: 0 0.6rem;
+}
+
+.show-active:hover,
+.show-active:focus,
+.show-active:active {
+  color: rgba(#fff, 0.95);
+  border-color: rgba(#fff, 0.95);
+}
+
+.show-active:active {
   outline: none;
 }
 
-header a.page-active {
+.show-active[data-active] {
   font-weight: $active-font-weight;
   color: #fff;
-  border: 3px white;
+  border-bottom-color: #fff;
 }
 
 // Reserve width for bold text
-header a::after {
+.show-active::after {
   display: block;
   content: attr(data-content);
   font-weight: $active-font-weight;
@@ -117,7 +135,6 @@ a.logo-link > img {
 .nav-site a {
   margin-top: 0.35rem;
   margin-bottom: 0.35rem;
-  padding: 0 1rem;
   white-space: nowrap;
 }
 
