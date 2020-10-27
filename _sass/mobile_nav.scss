@@ -1,5 +1,8 @@
 @import "shared";
 
+$menu-bg-color: darken($wired-purple, 2%);
+$menu-text-color: #fff;
+
 // Hamburger menu
 .mobile-menu {
   display: none;
@@ -13,14 +16,14 @@
   position: absolute;
   cursor: pointer;
   opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  z-index: 20; /* and place it over the hamburger */
   -webkit-touch-callout: none;
 
   &:checked {
     //  Transform all the slices of hamburger into a crossmark.
     & ~ span {
       opacity: 1;
-      background: #fff;
+      background: $menu-text-color;
 
       &:nth-of-type(1) {
         transform: translate(0px, 4px) rotate(45deg) scale(1.2);
@@ -33,28 +36,70 @@
         transform: translate(-2px, 0) rotate(-45deg) scale(1.2);
       }
     }
+
+    & ~ ul {
+      transform: none;
+    }
+
+    & ~ .dark-overlay {
+      z-index: 1;
+      opacity: 0.6;
+    }
   }
 }
 
 .mobile-menu > span {
   display: block;
+  position: relative; // Need this for z-index to work
   width: 20px;
   height: 3px;
   border-radius: 3px;
   background-color: #fff;
   margin: 4px 0;
-  z-index: 1;
+  z-index: 10;
   transform-origin: 4px 0px;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
     background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
 
-  &:first-child {
-    transform-origin: 0% 0%;
+.mobile-menu ul {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: $menu-bg-color;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform-style: preserve-3d;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+
+  & li {
+    margin-top: 1rem;
   }
 
-  &:nth-last-child(2) {
-    transform-origin: 0% 100%;
+  & a {
+    color: $menu-text-color;
   }
+}
+
+.dark-overlay {
+  position: absolute;
+  background-color: black;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -2;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 @include media-max-sm {

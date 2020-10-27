@@ -6,6 +6,7 @@ var lastScrollY;
 var delta = 5;
 var header = document.getElementById("site-header");
 var headerHeight = header.offsetHeight;
+var mobileMenuIsOpen = false;
 
 document.addEventListener("scroll", () => {
   didScroll = true;
@@ -47,4 +48,22 @@ function hasScrolled() {
   }
 
   lastScrollY = scrollY;
+
+  // Do not allow header to be hidden when mobileMenuIsOpen
+  if (mobileMenuIsOpen) header.classList.remove("header-hidden");
 }
+
+function mobileMenuLockScroll() {
+  document.body.classList.toggle("lock-scroll");
+  mobileMenuIsOpen = !mobileMenuIsOpen;
+}
+
+// Disable scroll when dark overlay is activated
+var darkOverlay = document.getElementById("dark-overlay");
+darkOverlay.addEventListener(
+  "touchmove",
+  (e) => {
+    e.preventDefault();
+  },
+  false
+);
