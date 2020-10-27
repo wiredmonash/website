@@ -8,7 +8,7 @@
 $social-icon-size: 1.5rem;
 
 /* Common */
-#site-header {
+.site-header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -23,21 +23,26 @@ $social-icon-size: 1.5rem;
   background-color: darken($wired-purple, 2%);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4), 0 6px 5px 0 rgba(0, 0, 0, 0.1);
   z-index: 1;
+
+  & a {
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  & ul,
+  & ol {
+    list-style: none;
+  }
 }
 
-#site-header.header-hidden {
+.header-hidden {
   transform: translateY(-100%);
 }
 
-#site-header.header-transparent {
+.header-transparent {
   background-color: transparent;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-}
-
-header a {
-  text-decoration: none;
-  font-weight: 600;
-  text-align: center;
 }
 
 .opaque-on-hover {
@@ -49,10 +54,9 @@ header a {
   &:active {
     opacity: 0.95;
   }
-}
-
-.opaque-on-hover[data-force-opaque] {
-  opacity: 1;
+  &[data-force-opaque] {
+    opacity: 1;
+  }
 }
 
 $active-font-weight: 600;
@@ -63,101 +67,102 @@ $active-font-weight: 600;
   border-bottom: 2px solid transparent;
   padding: 0 0.1rem;
   margin: 0 0.6rem;
-}
 
-.show-active:hover,
-.show-active:focus,
-.show-active:active {
-  color: rgba(#fff, 0.95);
-  border-color: rgba(#fff, 0.95);
-}
+  &:hover,
+  &:focus,
+  &:active {
+    color: rgba(#fff, 0.95);
+    border-color: rgba(#fff, 0.95);
+  }
 
-.show-active:active {
-  outline: none;
-}
+  &:active {
+    outline: none;
+  }
 
-.show-active[data-active] {
-  font-weight: $active-font-weight;
-  color: #fff;
-  border-bottom-color: #fff;
-}
+  &[data-active] {
+    font-weight: $active-font-weight;
+    color: #fff;
+    border-bottom-color: #fff;
+  }
 
-// Reserve width for bold text
-.show-active::after {
-  display: block;
-  content: attr(data-content);
-  font-weight: $active-font-weight;
-  height: 1px;
-  color: transparent;
-  overflow: hidden;
-  visibility: hidden;
-}
-
-nav ul {
-  height: 100%;
-  width: 100%;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-nav li {
-  display: flex;
+  // Reserve width for bold text
+  &::after {
+    display: block;
+    content: attr(data-content);
+    font-weight: $active-font-weight;
+    height: 1px;
+    color: transparent;
+    overflow: hidden;
+    visibility: hidden;
+  }
 }
 
 // Logo styles
-a.logo-link {
+.logo-link {
   @include header-vertical-margins;
   max-width: 7.5rem;
   height: $social-icon-size;
   text-align: left;
-}
-
-a.logo-link > img {
-  height: $social-icon-size;
+  & > img {
+    height: $social-icon-size;
+  }
 }
 
 // Internal site links
 .nav-site {
   flex-grow: 1;
   flex-basis: initial;
-}
+  & ul {
+    justify-content: center;
+  }
 
-.nav-site ul {
-  justify-content: center;
-}
-
-.nav-site a {
-  margin-top: 0.35rem;
-  margin-bottom: 0.35rem;
-  white-space: nowrap;
+  & a {
+    margin-top: 0.35rem;
+    margin-bottom: 0.35rem;
+    white-space: nowrap;
+  }
 }
 
 // Social links
 .nav-social {
   @include header-vertical-margins;
   margin-left: auto;
+
+  & ul {
+    justify-content: flex-end;
+  }
+
+  & a {
+    margin-left: 0.75rem;
+    height: $social-icon-size;
+  }
+
+  & img {
+    width: $social-icon-size;
+    height: $social-icon-size;
+    // Make the images white using a CSS filter
+    filter: grayscale(100%) brightness(0) invert(100%);
+  }
 }
 
-.nav-social ul {
-  justify-content: flex-end;
-}
-
-.nav-social a {
-  margin-left: 0.75rem;
-  height: $social-icon-size;
-}
-
-.nav-social img {
-  width: $social-icon-size;
-  height: $social-icon-size;
-  // Make the images white using a CSS filter
-  filter: grayscale(100%) brightness(0) invert(100%);
+// Both
+.nav-site,
+.nav-social {
+  & ul {
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  & li {
+    display: flex;
+  }
 }
 
 // Hamburger menu
