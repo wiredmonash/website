@@ -1,7 +1,19 @@
 @import "shared";
 @import "motion";
 
-/* Home Page */
+.container-home {
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  box-shadow: 0 -2px 3px 0 rgba(black, 0.4), 0 -6px 3px 0 rgba(black, 0.1);
+}
+
 #particles-js {
   top: 0;
   width: 100%;
@@ -33,6 +45,7 @@
   align-items: center;
   background: transparent;
   opacity: 0.9;
+  filter: drop-shadow(0 2px 3px rgba(black, 0.5));
 }
 
 .landing-message span {
