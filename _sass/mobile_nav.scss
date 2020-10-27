@@ -1,6 +1,6 @@
 @import "shared";
 
-$menu-bg-color: darken($wired-purple, 2%);
+$menu-bg-color: $wired-purple;
 $menu-text-color: #fff;
 
 // Hamburger menu
@@ -36,10 +36,11 @@ $menu-text-color: #fff;
 
 .mobile-menu ul {
   position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
+  margin: -6rem 0 0 -3rem;
+  height: calc(100vh + 6rem);
+  min-width: 70vw;
+  padding: 3rem;
+  padding-top: 8rem;
   background: $menu-bg-color;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -52,6 +53,7 @@ $menu-text-color: #fff;
   z-index: 5;
   display: flex;
   flex-direction: column;
+  box-shadow: 1px 2px 3px 0 rgba(black, 0.4), 2px 5px 5px 0 rgba(black, 0.1);
 
   & li {
     margin-top: 1rem;
