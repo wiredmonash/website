@@ -16,20 +16,11 @@ html {
 body {
   margin: 0;
   padding-top: 6rem;
-  font-family: $body-font-family;
+  font-family: $wired-font-family;
   // font-size: 16px;
   min-height: 100%;
   display: flex;
   flex-direction: column;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $heading-font-family;
 }
 
 a {
@@ -125,8 +116,7 @@ footer {
   position: absolute;
   @include fade-in(4s);
   color: #fff;
-  font-family: $heading-font-family;
-  font-weight: 900;
+  font-weight: 800;
   font-size: 5rem;
   top: min(17rem, 35%);
   padding: 4rem;
