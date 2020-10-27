@@ -28,6 +28,12 @@ url: "https://wired.org.au" # the base hostname & protocol for your site, e.g. h
 # twitter_username: jekyllrb
 github_username: wired-admin
 
+# Collections
+# Collections dir: add collections as subdirs here (e.g. "books" collection as collections/_books)
+collections_dir: collections
+collections:
+  - committee
+
 # Build settings
 theme: minima
 plugins:

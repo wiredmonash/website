@@ -86,3 +86,38 @@ footer {
   opacity: 0.8;
   padding: 0 $gutter-padding 1rem;
 }
+
+.committee-grid {
+  display: grid;
+  width: 100%;
+  /* Prevent vertical gaps */
+  line-height: 0;
+  column-count: 5;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  justify-items: center;
+}
+
+.committee-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
+}
+
+.committee-text {
+  padding: 0.5rem;
+}
+
+.committee-name {
+  margin-bottom: 0.5rem;
+  color: #232323;
+}
+
+.committee-title {
+  line-height: 2;
+}
+
+.committee-image {
+  object-fit: contain;
+  height: 16rem;
+}
