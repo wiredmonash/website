@@ -73,7 +73,7 @@
 }
 
 /* Mobile */
-@media only screen and (max-width: 480px) {
+@include media-max-sm {
   .landing-message {
     font-size: 3rem;
   }
