@@ -60,6 +60,17 @@ $social-icon-size: 1.5rem;
   }
 }
 
+.social-link {
+  height: $social-icon-size;
+
+  & img {
+    width: $social-icon-size;
+    height: $social-icon-size;
+    // Make the images white using a CSS filter
+    filter: grayscale(100%) brightness(0) invert(100%);
+  }
+}
+
 $active-font-weight: 700;
 
 .show-active {
@@ -67,7 +78,6 @@ $active-font-weight: 700;
   transition: color 0.2s, border-color 0.2s;
   border-bottom: 2px solid transparent;
   padding: 0 0.1rem;
-  margin: 0 0.6rem;
   display: block; // Stop pseudo-element ::after wrapping onto next line in mobile menu
 
   &:hover,
@@ -119,8 +129,7 @@ $active-font-weight: 700;
   }
 
   & a {
-    margin-top: 0.35rem;
-    margin-bottom: 0.35rem;
+    margin: 0.35rem 0.6rem;
     white-space: nowrap;
   }
 }
@@ -136,14 +145,6 @@ $active-font-weight: 700;
 
   & a {
     margin-left: 0.75rem;
-    height: $social-icon-size;
-  }
-
-  & img {
-    width: $social-icon-size;
-    height: $social-icon-size;
-    // Make the images white using a CSS filter
-    filter: grayscale(100%) brightness(0) invert(100%);
   }
 }
 
