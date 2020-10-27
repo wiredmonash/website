@@ -60,7 +60,7 @@ $social-icon-size: 1.5rem;
   }
 }
 
-$active-font-weight: 600;
+$active-font-weight: 700;
 
 .show-active {
   color: rgba(#fff, 0.8);
@@ -68,6 +68,7 @@ $active-font-weight: 600;
   border-bottom: 2px solid transparent;
   padding: 0 0.1rem;
   margin: 0 0.6rem;
+  display: block; // Stop pseudo-element ::after wrapping onto next line in mobile menu
 
   &:hover,
   &:focus,
