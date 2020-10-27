@@ -5,6 +5,9 @@
   margin-bottom: 0.5rem;
 }
 
+$active-font-weight: 800;
+$social-icon-size: 1.5rem;
+
 /* Common */
 #site-header {
   display: flex;
@@ -16,7 +19,7 @@
   width: 100%;
   will-change: transform;
   transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
-  min-height: 4rem;
+  min-height: 3rem;
   padding: 0.25rem $gutter-padding;
   background-color: darken($wired-purple, 2%);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4), 0 6px 5px 0 rgba(0, 0, 0, 0.1);
@@ -56,8 +59,20 @@ header a:active {
 }
 
 header a.page-active {
-  font-weight: 800;
+  font-weight: $active-font-weight;
   color: #fff;
+  border: 3px white;
+}
+
+// Reserve width for bold text
+header a::after {
+  display: block;
+  content: attr(data-content);
+  font-weight: $active-font-weight;
+  height: 1px;
+  color: transparent;
+  overflow: hidden;
+  visibility: hidden;
 }
 
 nav ul {
@@ -81,12 +96,12 @@ nav li {
 a.logo-link {
   @include header-vertical-margins;
   max-width: 7.5rem;
-  height: 1.5rem;
+  height: $social-icon-size;
   text-align: left;
 }
 
 a.logo-link > img {
-  height: 100%;
+  height: $social-icon-size;
 }
 
 // Internal site links
@@ -118,11 +133,12 @@ a.logo-link > img {
 
 .nav-social a {
   margin-left: 0.75rem;
+  height: $social-icon-size;
 }
 
 .nav-social img {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: $social-icon-size;
+  height: $social-icon-size;
   // Make the images white using a CSS filter
   filter: grayscale(100%) brightness(0) invert(100%);
 }
