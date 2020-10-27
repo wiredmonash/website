@@ -22,9 +22,15 @@ The default server address is `http://127.0.0.1:4000`. If this port is already t
 - Current breakpoints used for media queries:
   - 480px
   - 768px
+### Adding new pages
 - All pages that you want an entry in the navbar for must have an `order` field in the front matter: this field determines what
 order the navbar entries appear in (lower order values at left, higher order values at right). Only pages with order values >= 1
-will be shown.  
+will be shown.
+- Use `layout: default` unless you have a good reason not to.
+- You can write pages in Markdown by using the `.md` extension: this will be parsed to HTML using [Kramdown](https://kramdown.gettalong.org/). You can include HTML directly in your Markdown files for elements that you don't want to convert to Markdown.
+  - By default, you cannot write Markdown inside HTML tags in your `.md` files. (TODO: add details on using markdownify) 
+- Add layouts in the `_layouts` folder (see `default.html` and `home.html` for details). Any layout you add that extends directly from `base.html` must include `footer.html`.
+
 
 ## Site hosting configuration
 
