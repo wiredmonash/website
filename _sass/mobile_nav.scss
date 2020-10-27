@@ -56,12 +56,26 @@ $menu-text-color: #fff;
   align-items: flex-start;
   box-shadow: 1px 2px 3px 0 rgba(black, 0.4), 2px 5px 5px 0 rgba(black, 0.1);
 
-  & li {
-    margin-top: 1rem;
-  }
-
   & a {
     color: $menu-text-color;
+  }
+}
+
+.mobile-menu__default-li {
+  margin-top: 1rem;
+  margin-left: 0.25rem;
+}
+
+// Logo and social links
+.mobile-menu__logo-li {
+  margin-bottom: 1.5rem;
+}
+
+.mobile-menu__social-li {
+  margin-top: 2.5rem;
+  margin-left: 0.25rem;
+  & .social-link {
+    margin-right: 0.5rem;
   }
 }
 
