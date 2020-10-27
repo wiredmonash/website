@@ -161,7 +161,7 @@ a.logo-link > img {
 }
 
 /* Mobile */
-@media only screen and (max-width: 480px) {
+@include media-max-sm {
   a.logo-link {
     flex-grow: 0;
     width: 100%;
@@ -172,7 +172,7 @@ a.logo-link > img {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@include media-max-md {
   // Push site nav links to second row
   .nav-site {
     order: 2;
