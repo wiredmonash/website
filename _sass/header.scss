@@ -112,6 +112,7 @@ $active-font-weight: 700;
 // Logo styles
 .logo-link {
   @include header-vertical-margins;
+  width: 7.5em;
   max-width: 7.5em;
   height: $social-icon-size;
   text-align: left;
@@ -174,9 +175,8 @@ $active-font-weight: 700;
 
 /* Mobile */
 @include media-max-sm {
-  a.logo-link {
-    flex-grow: 0;
-    width: 100%;
+  .logo-link {
+    flex-grow: 1;
   }
 
   .nav-site ul {
