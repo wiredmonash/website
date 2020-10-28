@@ -43,7 +43,7 @@ The default server address is `http://127.0.0.1:4000`. If this port is already t
 
 ### Working with Turbolinks
 
-This site uses Turbolinks to provide a seamless internal navigation experience. Because Turbolinks never refreshes the page after every link click, any code that uses vanilla DOM page load events (e.g. `window.onload`, `DOMContentLoaded`) will only run on the initial load into the website. As such, if you need to run code on every navigation you need to add an event listener for the `turbolinks:load` event. (See `assets/scripts/header.js` for an example.)
+This site uses Turbolinks to provide a seamless internal navigation experience. Because Turbolinks never refreshes the page after every link click, any code that uses vanilla DOM page load events (e.g. `window.onload`, `DOMContentLoaded`) will only run on the initial load into the website. As such, if you need to run code on every navigation you need to add an event listener for the `turbolinks:load` event. (See <https://github.com/turbolinks/turbolinks#installing-javascript-behavior> for more details.)
 
 ## Site hosting configuration
 
