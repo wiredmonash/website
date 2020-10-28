@@ -71,6 +71,15 @@ footer {
   padding: 0 $gutter-padding 1rem;
 }
 
+.no-anim * {
+  &,
+  &::before,
+  &::after {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+  }
+}
+
 @include media-max-sm {
   .page-container {
     padding-top: 3rem;
