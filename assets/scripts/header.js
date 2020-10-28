@@ -31,6 +31,7 @@ document.addEventListener(
 setInterval(() => {
   if (didScroll) {
     hasScrolled();
+    didScroll = false;
   }
 }, 250);
 
