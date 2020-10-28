@@ -6,7 +6,7 @@
   margin-bottom: 0.5rem;
 }
 
-$social-icon-size: 1.5rem;
+$social-icon-size: 1.5em;
 
 /* Common */
 .site-header {
@@ -112,11 +112,12 @@ $active-font-weight: 700;
 // Logo styles
 .logo-link {
   @include header-vertical-margins;
-  max-width: 7.5rem;
+  max-width: 7.5em;
   height: $social-icon-size;
   text-align: left;
   & > img {
     height: $social-icon-size;
+    width: auto;
   }
 }
 
@@ -138,6 +139,9 @@ $active-font-weight: 700;
 .nav-social {
   @include header-vertical-margins;
   margin-left: auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 
   & ul {
     justify-content: flex-end;
@@ -184,9 +188,25 @@ $active-font-weight: 700;
   }
 }
 
+@include media-max-lg {
+  .site-header {
+    font-size: 0.9em;
+  }
+}
+
 @include media-max-md {
   // Push site nav links to second row
   .nav-site {
     order: 2;
+  }
+
+  .site-header {
+    font-size: 0.75em;
+  }
+}
+
+@include media-max-sm {
+  .site-header {
+    font-size: 1em;
   }
 }
