@@ -54,7 +54,6 @@ function hasScrolled() {
 }
 
 function mobileMenuLockScroll() {
-  document.body.classList.toggle("lock-scroll");
   mobileMenuIsOpen = !mobileMenuIsOpen;
 }
 
