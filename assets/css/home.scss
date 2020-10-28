@@ -48,6 +48,7 @@
   align-items: center;
   background: transparent;
   opacity: 0.9;
+  transition: transform 0.5s;
   filter: drop-shadow(0 2px 3px rgba(black, 0.5));
 }
 
@@ -76,6 +77,9 @@
 @include media-max-sm {
   .landing-message {
     font-size: 3rem;
+    // Address jump when address bar hides on scroll down
+    top: 8rem;
+    transform: translate(-50%, 0);
   }
 }
 
