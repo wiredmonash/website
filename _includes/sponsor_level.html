@@ -1,6 +1,6 @@
 <h2>{{ include.level }}</h2>
 <div>
     {% for sponsor in include.sponsors %}
-        <a href="{{sponsor.url}}" target="_blank"><img class="sponsorImg" src="{{sponsor.image}}" alt="{{sponsor.name}}"/></a>
+        <a href="{{sponsor.url}}" target="_blank" rel="noreferrer"><img class="sponsorImg" src="{{sponsor.image}}" alt="{{sponsor.name}}"/></a>
     {% endfor %}
 </div>
