@@ -36,7 +36,7 @@ setInterval(() => {
 
 const preventDefaultScroll = (e) => e.preventDefault();
 
-function mobileMenuLockScroll() {
+function handleMobileMenuInputClick() {
   mobileMenuIsOpen = !mobileMenuIsOpen;
 }
 
