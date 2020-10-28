@@ -25,7 +25,7 @@ document.addEventListener(
   () => {
     didScroll = true;
   },
-  { passive: false }
+  { passive: true }
 );
 
 setInterval(() => {
