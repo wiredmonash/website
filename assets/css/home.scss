@@ -27,7 +27,6 @@
 }
 
 .landing-message {
-  @include fade-in(4s);
   position: absolute;
   /* Position this in centre of parent */
   top: 50%; /* position the top  edge of the element at the middle of the parent */
@@ -48,15 +47,17 @@
   align-items: center;
   background: transparent;
   opacity: 0.9;
-  transition: transform 0.5s;
   filter: drop-shadow(0 2px 3px rgba(black, 0.5));
 }
 
 .landing-message span {
+  @include fade-in(2s);
+  animation-delay: 1s;
   text-align: center;
 }
 
 .landing-message img {
+  @include fade-in(2s);
   height: 1.5em;
   width: auto;
 }

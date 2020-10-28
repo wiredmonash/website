@@ -49,4 +49,6 @@
   -moz-animation: titleFadeInIn $duration;
   -o-animation: titleFadeIn $duration;
   animation: titleFadeIn $duration;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
