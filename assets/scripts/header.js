@@ -2,9 +2,8 @@
 
 var didScroll = false;
 var lastScrollY;
-var delta = 5;
 var mobileMenuIsOpen = false;
-var mobileMenuHasBeenOpened = false;
+const delta = 5;
 const getDarkOverlay = () => document.getElementById("dark-overlay");
 const getMobileMenuUl = () => document.getElementById("mobile-menu__ul");
 // Reset variables when changing pages
@@ -12,7 +11,6 @@ document.addEventListener("turbolinks:load", () => {
   didScroll = false;
   lastScrollY = null;
   mobileMenuIsOpen = false;
-  mobileMenuHasBeenOpened = false;
   // Block scroll on dark-overlay and the ul
   getMobileMenuUl().addEventListener("touchmove", preventDefaultScroll, {
     passive: false,
@@ -30,17 +28,6 @@ document.addEventListener(
   { passive: false }
 );
 
-document.addEventListener("DOMContentLoaded", () => {
-  // Disable scroll when dark overlay is activated
-  getDarkOverlay().addEventListener(
-    "touchmove",
-    (e) => {
-      e.preventDefault();
-    },
-    { passive: false }
-  );
-});
-
 setInterval(() => {
   if (didScroll) {
     hasScrolled();
@@ -51,11 +38,6 @@ const preventDefaultScroll = (e) => e.preventDefault();
 
 function mobileMenuLockScroll() {
   mobileMenuIsOpen = !mobileMenuIsOpen;
-  if (!mobileMenuHasBeenOpened) {
-    // Stop hiding dark-overlay (done to hide keyframe animation)
-    getDarkOverlay().removeAttribute("style");
-    mobileMenuHasBeenOpened = true;
-  }
 }
 
 // Adapted from https://jsfiddle.net/mariusc23/s6mLJ/31/
