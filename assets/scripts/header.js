@@ -4,8 +4,6 @@
 var didScroll = false;
 var lastScrollY;
 var delta = 5;
-var header = document.getElementById("site-header");
-var headerHeight = header.offsetHeight;
 var mobileMenuIsOpen = false;
 
 document.addEventListener("scroll", () => {
@@ -19,6 +17,8 @@ setInterval(() => {
 }, 250);
 
 function hasScrolled() {
+  let header = document.getElementById("site-header");
+  let headerHeight = header.offsetHeight;
   if (typeof lastScrollY !== "number") {
     lastScrollY = window.scrollY;
     return;
@@ -58,12 +58,14 @@ function mobileMenuLockScroll() {
   mobileMenuIsOpen = !mobileMenuIsOpen;
 }
 
-// Disable scroll when dark overlay is activated
-var darkOverlay = document.getElementById("dark-overlay");
-darkOverlay.addEventListener(
-  "touchmove",
-  (e) => {
-    e.preventDefault();
-  },
-  false
-);
+document.addEventListener("DOMContentLoaded", () => {
+  let darkOverlay = document.getElementById("dark-overlay");
+  // Disable scroll when dark overlay is activated
+  darkOverlay.addEventListener(
+    "touchmove",
+    (e) => {
+      e.preventDefault();
+    },
+    false
+  );
+});

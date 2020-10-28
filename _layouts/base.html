@@ -39,13 +39,12 @@
     <meta name="msapplication-TileColor" content="#6e297e">
     <meta name="msapplication-TileImage" content="assets/images/icons/microsoft/ms-icon-144x144.png">
     <meta name="theme-color" content="#6e297e">
-    <script src="assets/scripts/turbolinks.js"></script>
+    <script src="assets/scripts/turbolinks.js" type="text/javascript"></script>
+    <script src="assets/scripts/header.js" type="text/javascript"></script>
+    <script>var pageTitle = "{{ page.title }}";</script>
 </head>
 
 <body>
-    <script>
-        var pageTitle = "{{ page.title }}"
-    </script>
     {% include header.html %}
     <div class="page-container">
         {{ content }}
