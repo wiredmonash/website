@@ -3,7 +3,7 @@
     <span></span>
     <span></span>
     <span></span>
-    <ul>
+    <ul id="mobile-menu__ul">
         <li class="mobile-menu__logo-li">
             <a href="{{ '/' | relative_url }}" title="WIRED Home" class="logo-link opaque-on-hover" {% if page.title == "Home" %} data-force-opaque {% endif %}>
                 <img alt="WIRED" height="24" src="assets/images/logoWhite.png" width="100"></a>
@@ -22,5 +22,5 @@
             {% include social_icon.html href="https://www.instagram.com/wiredmonash/" title="WIRED Instagram" img_alt="Instagram" img_src="assets/images/icons/social/logo-instagram.svg" %}
         </li>
     </ul>
-    <div class="dark-overlay" id="dark-overlay"></div>
+    <div class="dark-overlay" id="dark-overlay" style="display: none;"></div>
 </div>
