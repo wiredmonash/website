@@ -89,7 +89,35 @@ $menu-text-color: #fff;
   width: 100vw;
   z-index: -2;
   opacity: 0;
-  transition: opacity 0.5s ease;
+  animation-name: overlay-slide-out;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  transform: translateX(-100%);
+  // transition: opacity 1s ease, transform 0.3s linear;
+}
+
+@keyframes overlay-slide-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.6;
+  }
+}
+
+@keyframes overlay-slide-out {
+  0% {
+    opacity: 0.6;
+    transform: translateX(0);
+  }
+  99% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
 }
 
 // Checked styles
@@ -119,7 +147,10 @@ $menu-text-color: #fff;
   // Activate dark overlay
   & ~ .dark-overlay {
     z-index: 4;
-    opacity: 0.6;
+    transform: translateX(0);
+    animation-name: overlay-slide-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
   }
 }
 
