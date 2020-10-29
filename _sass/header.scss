@@ -1,0 +1,212 @@
+@import "shared";
+@import "mobile_nav";
+
+@mixin header-vertical-margins {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+$social-icon-size: 1.5em;
+
+/* Common */
+.site-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  will-change: transform;
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  min-height: 3rem;
+  padding: 0.25rem $gutter-padding;
+  background-color: darken($wired-purple, 2%);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4), 0 6px 5px 0 rgba(0, 0, 0, 0.1);
+  z-index: 1;
+
+  & a {
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  & ul,
+  & ol {
+    list-style: none;
+  }
+}
+
+.header-hidden {
+  transform: translateY(-100%);
+}
+
+.header-transparent {
+  background-color: transparent;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.opaque-on-hover {
+  opacity: 0.85;
+  transition: opacity 0.2s;
+  will-change: opacity;
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.95;
+  }
+  &[data-force-opaque] {
+    opacity: 1;
+  }
+}
+
+.social-link {
+  height: $social-icon-size;
+
+  & img {
+    width: $social-icon-size;
+    height: $social-icon-size;
+    // Make the images white using a CSS filter
+    filter: grayscale(100%) brightness(0) invert(100%);
+  }
+}
+
+$active-font-weight: 700;
+
+.show-active {
+  color: rgba(#fff, 0.8);
+  transition: color 0.2s, border-color 0.2s;
+  border-bottom: 2px solid transparent;
+  padding: 0 0.1rem;
+  display: block; // Stop pseudo-element ::after wrapping onto next line in mobile menu
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: rgba(#fff, 0.95);
+    border-color: rgba(#fff, 0.95);
+  }
+
+  &:active {
+    outline: none;
+  }
+
+  &[data-active] {
+    font-weight: $active-font-weight;
+    color: #fff;
+    border-bottom-color: #fff;
+  }
+
+  // Reserve width for bold text
+  &::after {
+    display: block;
+    content: attr(data-content);
+    font-weight: $active-font-weight;
+    height: 1px;
+    color: transparent;
+    overflow: hidden;
+    visibility: hidden;
+  }
+}
+
+// Logo styles
+.logo-link {
+  @include header-vertical-margins;
+  width: 7.5em;
+  max-width: 7.5em;
+  height: $social-icon-size;
+  text-align: left;
+  & > img {
+    height: $social-icon-size;
+    width: auto;
+  }
+}
+
+// Internal site links
+.nav-site {
+  flex-grow: 1;
+  flex-basis: initial;
+  & ul {
+    justify-content: center;
+  }
+
+  & a {
+    margin: 0.35rem 0.6rem;
+    white-space: nowrap;
+  }
+}
+
+// Social links
+.nav-social {
+  @include header-vertical-margins;
+  margin-left: auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  & ul {
+    justify-content: flex-end;
+  }
+
+  & a {
+    margin-left: 0.75rem;
+  }
+}
+
+// Both
+.nav-site,
+.nav-social {
+  & ul {
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  & li {
+    display: flex;
+  }
+}
+
+/* Mobile */
+@include media-max-sm {
+  .logo-link {
+    flex-grow: 1;
+  }
+
+  .nav-site ul {
+    justify-content: space-around;
+  }
+
+  .nav-site {
+    display: none;
+  }
+}
+
+@include media-max-lg {
+  .site-header {
+    font-size: 0.9em;
+  }
+}
+
+@include media-max-md {
+  // Push site nav links to second row
+  .nav-site {
+    order: 2;
+  }
+
+  .site-header {
+    font-size: 0.75em;
+  }
+}
+
+@include media-max-sm {
+  .site-header {
+    font-size: 1em;
+  }
+}

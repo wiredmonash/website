@@ -1,0 +1,26 @@
+$gutter-padding: min(2rem, 6vw);
+$wired-purple: #6e297e;
+$wired-font-family: "Open Sans", "Avenir Next", Avenir, "Segoe UI",
+  "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@function grid-auto-resize($min-size) {
+  @return repeat(auto-fit, minmax($min-size, 1fr));
+}
+
+@mixin media-max-sm {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin media-max-md {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-max-lg {
+  @media (max-width: 900px) {
+    @content;
+  }
+}

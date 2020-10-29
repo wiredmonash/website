@@ -1,0 +1,54 @@
+/* Fade in */
+@keyframes titleFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
+
+@-moz-keyframes titleFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
+
+@-webkit-keyframes titleFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
+
+@-ms-keyframes titleFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
+
+@-o-keyframes titleFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
+
+@mixin fade-in($duration) {
+  -webkit-animation: titleFadeIn $duration;
+  -moz-animation: titleFadeInIn $duration;
+  -o-animation: titleFadeIn $duration;
+  animation: titleFadeIn $duration;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}

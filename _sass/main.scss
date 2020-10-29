@@ -1,0 +1,87 @@
+@import "shared";
+@import "motion";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* Fix content jumping issue */
+  overflow-y: scroll;
+  height: 100%;
+}
+
+body {
+  font-family: $wired-font-family;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  // font-size: 16px;
+}
+
+.page-container {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; // Fix Safari bug where footer is visible over content
+}
+
+a {
+  color: #a23db2;
+}
+
+.content {
+  flex-grow: 1;
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: $gutter-padding;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p,
+ul,
+ol {
+  line-height: 1.6;
+}
+
+footer {
+  align-self: flex-end;
+  width: 100%;
+  text-align: center;
+  font-size: 0.75rem;
+  opacity: 0.8;
+  padding: 0 $gutter-padding 1rem;
+}
+
+.no-anim * {
+  &,
+  &::before,
+  &::after {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+  }
+}
+
+@include media-max-sm {
+  .page-container {
+    padding-top: 3rem;
+  }
+}

@@ -1,0 +1,132 @@
+@import "shared";
+
+$menu-bg-color: $wired-purple;
+$menu-text-color: #fff;
+
+// Hamburger menu
+.mobile-menu {
+  display: none;
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+.mobile-menu > input {
+  display: block;
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 20; /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+.mobile-menu > span {
+  display: block;
+  position: relative; // Need this for z-index to work
+  width: 20px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  z-index: 10;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+.mobile-menu ul {
+  position: absolute;
+  margin: -6rem 0 0 -3rem;
+  height: calc(100vh + 6rem);
+  min-width: 70vw;
+  padding: 3rem;
+  padding-top: 8rem;
+  background: $menu-bg-color;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform-style: preserve-3d;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 1px 2px 3px 0 rgba(black, 0.4), 2px 5px 5px 0 rgba(black, 0.1);
+
+  & a {
+    color: $menu-text-color;
+  }
+}
+
+.mobile-menu__default-li {
+  margin-top: 1rem;
+  margin-left: 0.25rem;
+}
+
+// Logo and social links
+.mobile-menu__logo-li {
+  margin-bottom: 1.5rem;
+}
+
+.mobile-menu__social-li {
+  margin-top: 2.5rem;
+  margin-left: 0.25rem;
+  & .social-link {
+    margin-right: 0.5rem;
+  }
+}
+
+.dark-overlay {
+  position: absolute;
+  background-color: black;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -2;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s, transform 0.6s cubic-bezier(1, -0.02, 1, -0.28);
+}
+// Checked styles
+.mobile-menu input:checked {
+  //  Transform all the slices of hamburger into a crossmark.
+  & ~ span {
+    opacity: 1;
+    background: $menu-text-color;
+
+    &:nth-of-type(1) {
+      transform: translate(0px, 4px) rotate(45deg) scale(1.2);
+    }
+    &:nth-of-type(2) {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    &:nth-of-type(3) {
+      transform: translate(-2px, 0) rotate(-45deg) scale(1.2);
+    }
+  }
+
+  // Slide menu out
+  & ~ ul {
+    transform: none;
+  }
+
+  // Activate dark overlay
+  & ~ .dark-overlay {
+    z-index: 4;
+    transform: translateX(0);
+    opacity: 0.6;
+    transition: opacity 0.5s, transform 0.01s;
+  }
+}
+
+@include media-max-sm {
+  .mobile-menu {
+    display: block;
+  }
+}

@@ -1,0 +1,57 @@
+---
+layout: default
+title: Committee
+order: 5
+extra_css:
+- committee.css 
+committee:
+- 
+  name: Gavin Douch
+  title: President
+  image: Gavin_Douch.jpg
+- 
+  name: Keaton Tang
+  title: Vice President
+  image: Keaton_Tang.jpg
+- 
+  name: Vibhas Kamal
+  title: Secretary
+  image: Vibhas_Kamal.jpg
+- 
+  name: Aaron Chao
+  title: Treasurer
+  image: Aaron_Chao.png
+- 
+  name: Anika Dixit
+  title: General Representative
+  image: Anika_Dixit.jpg
+- 
+  name: Tina Phan
+  title: General Representative
+  image: Tina_Phan.jpg
+- 
+  name: Riya Kiran
+  title: General Representative
+  image: Riya_Kiran.jpg
+- 
+  name: Tiffany Ung
+  title: General Representative
+  image: Tiffany_Ung.jpg
+- 
+  name: Damon Cai
+  title: General Representative
+  image: Damon_Cai.jpg
+---
+<h2>2020 Committee</h2>
+
+<div class="committee-grid">
+    {% for member in page.committee %}
+    <div class="committee-card">
+      <img class="committee-image" src="assets/images/committee/{{ member.image }}" height=320 width="240" alt="{{ member.name }}: {{ member.title }}">
+      <div class="committee-text">
+        <h4 class="committee-name">{{ member.name }}</h4>
+        <span class="committee-title">{{ member.title }}</span>
+      </div>
+    </div>
+    {% endfor %}
+</div>
