@@ -80,7 +80,7 @@ footer {
   }
 }
 
-@include media-max-sm {
+@include mq($until: tablet) {
   .page-container {
     padding-top: 3rem;
   }

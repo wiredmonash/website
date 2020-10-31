@@ -17,7 +17,7 @@
   width: 100%;
 }
 
-@include media-max-sm {
+@include mq($until: tablet) {
   .membershipPerks {
     grid-template-columns: grid-auto-resize(240px);
   }

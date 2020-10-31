@@ -75,7 +75,7 @@
 }
 
 /* Mobile */
-@include media-max-sm {
+@include mq($until: tablet) {
   .landing-message {
     font-size: 3rem;
     // Address jump when address bar hides on scroll down

@@ -174,7 +174,7 @@ $active-font-weight: 700;
 }
 
 /* Mobile */
-@include media-max-sm {
+@include mq($until: tablet) {
   .logo-link {
     flex-grow: 1;
   }
@@ -188,13 +188,7 @@ $active-font-weight: 700;
   }
 }
 
-@include media-max-lg {
-  .site-header {
-    font-size: 0.9em;
-  }
-}
-
-@include media-max-md {
+@include mq($from: tablet, $until: desktop) {
   // Push site nav links to second row
   .nav-site {
     order: 2;
@@ -202,11 +196,5 @@ $active-font-weight: 700;
 
   .site-header {
     font-size: 0.75em;
-  }
-}
-
-@include media-max-sm {
-  .site-header {
-    font-size: 1em;
   }
 }
