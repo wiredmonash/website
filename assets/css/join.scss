@@ -8,6 +8,9 @@
   grid-gap: 2rem;
   grid-template-columns: grid-auto-resize(320px);
   justify-items: center;
+  @include mq($until: tablet) {
+    grid-template-columns: grid-auto-resize(240px);
+  }
 }
 
 .membershipPerks > * {
@@ -15,10 +18,4 @@
 }
 .membershipPerks img {
   width: 100%;
-}
-
-@include mq($until: tablet) {
-  .membershipPerks {
-    grid-template-columns: grid-auto-resize(240px);
-  }
 }

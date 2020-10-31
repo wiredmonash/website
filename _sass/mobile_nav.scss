@@ -8,6 +8,10 @@ $menu-text-color: #fff;
   display: none;
   margin-right: 1rem;
   font-size: 1rem;
+
+  @include mq($until: tablet) {
+    display: block;
+  }
 }
 
 .mobile-menu > input {
@@ -122,11 +126,5 @@ $menu-text-color: #fff;
     transform: translateX(0);
     opacity: 0.6;
     transition: opacity 0.5s, transform 0.01s;
-  }
-}
-
-@include mq($until: tablet) {
-  .mobile-menu {
-    display: block;
   }
 }

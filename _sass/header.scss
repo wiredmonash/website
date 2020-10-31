@@ -25,15 +25,19 @@ $social-icon-size: 1.5em;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4), 0 6px 5px 0 rgba(0, 0, 0, 0.1);
   z-index: 1;
 
-  & a {
+  a {
     text-decoration: none;
     font-weight: 600;
     text-align: center;
   }
 
-  & ul,
-  & ol {
+  ul,
+  ol {
     list-style: none;
+  }
+
+  @include mq($from: tablet, $until: desktop) {
+    font-size: 0.75em;
   }
 }
 
@@ -50,12 +54,12 @@ $social-icon-size: 1.5em;
   opacity: 0.85;
   transition: opacity 0.2s;
   will-change: opacity;
-  &:hover,
-  &:focus,
-  &:active {
+  :hover,
+  :focus,
+  :active {
     opacity: 0.95;
   }
-  &[data-force-opaque] {
+  [data-force-opaque] {
     opacity: 1;
   }
 }
@@ -80,25 +84,25 @@ $active-font-weight: 700;
   padding: 0 0.1rem;
   display: block; // Stop pseudo-element ::after wrapping onto next line in mobile menu
 
-  &:hover,
-  &:focus,
-  &:active {
+  :hover,
+  :focus,
+  :active {
     color: rgba(#fff, 0.95);
     border-color: rgba(#fff, 0.95);
   }
 
-  &:active {
+  :active {
     outline: none;
   }
 
-  &[data-active] {
+  [data-active] {
     font-weight: $active-font-weight;
     color: #fff;
     border-bottom-color: #fff;
   }
 
   // Reserve width for bold text
-  &::after {
+  ::after {
     display: block;
     content: attr(data-content);
     font-weight: $active-font-weight;
@@ -116,9 +120,13 @@ $active-font-weight: 700;
   max-width: 7.5em;
   height: $social-icon-size;
   text-align: left;
-  & > img {
+  > img {
     height: $social-icon-size;
     width: auto;
+  }
+
+  @include mq($until: tablet) {
+    flex-grow: 1;
   }
 }
 
@@ -126,13 +134,25 @@ $active-font-weight: 700;
 .nav-site {
   flex-grow: 1;
   flex-basis: initial;
-  & ul {
+  ul {
     justify-content: center;
   }
 
-  & a {
+  a {
     margin: 0.35rem 0.6rem;
     white-space: nowrap;
+  }
+
+  @include mq($until: tablet) {
+    display: none;
+    ul {
+      justify-content: space-around;
+    }
+  }
+
+  @include mq($until: desktop) {
+    // Push site nav links to second row
+    order: 2;
   }
 }
 
@@ -144,11 +164,11 @@ $active-font-weight: 700;
   justify-content: center;
   align-items: center;
 
-  & ul {
+  ul {
     justify-content: flex-end;
   }
 
-  & a {
+  a {
     margin-left: 0.75rem;
   }
 }
@@ -156,7 +176,7 @@ $active-font-weight: 700;
 // Both
 .nav-site,
 .nav-social {
-  & ul {
+  ul {
     height: 100%;
     width: 100%;
     list-style: none;
@@ -168,33 +188,7 @@ $active-font-weight: 700;
     flex-wrap: wrap;
     align-items: center;
   }
-  & li {
+  li {
     display: flex;
-  }
-}
-
-/* Mobile */
-@include mq($until: tablet) {
-  .logo-link {
-    flex-grow: 1;
-  }
-
-  .nav-site ul {
-    justify-content: space-around;
-  }
-
-  .nav-site {
-    display: none;
-  }
-}
-
-@include mq($from: tablet, $until: desktop) {
-  // Push site nav links to second row
-  .nav-site {
-    order: 2;
-  }
-
-  .site-header {
-    font-size: 0.75em;
   }
 }
