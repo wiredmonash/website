@@ -25,6 +25,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%; // Fix Safari bug where footer is visible over content
+  overflow: hidden;
   @include mq($until: tablet) {
     padding-top: 3em;
   }
