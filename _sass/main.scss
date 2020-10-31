@@ -21,12 +21,12 @@ body {
 }
 
 .page-container {
-  padding-top: 6rem;
+  padding-top: 6em;
   display: flex;
   flex-direction: column;
   min-height: 100%; // Fix Safari bug where footer is visible over content
   @include mq($until: tablet) {
-    padding-top: 3rem;
+    padding-top: 3em;
   }
 }
 
@@ -40,22 +40,21 @@ a {
   max-width: 60rem;
   margin-left: auto;
   margin-right: auto;
-  padding: $gutter-padding;
-  padding-top: 1rem;
+  padding: 0.5em $gutter-padding 2em;
   display: flex;
   flex-direction: column;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3em;
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 2.25em;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 
 p,
@@ -68,9 +67,9 @@ footer {
   align-self: flex-end;
   width: 100%;
   text-align: center;
-  font-size: 0.75rem;
+  font-size: 0.75em;
   opacity: 0.8;
-  padding: 0 $gutter-padding 1rem;
+  padding: 0 $gutter-padding 1em;
 }
 
 .no-anim * {

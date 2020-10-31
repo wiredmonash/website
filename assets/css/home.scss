@@ -38,8 +38,8 @@
 
   color: #fff;
   font-weight: 800;
-  font-size: 4rem;
-  padding: 4rem;
+  font-size: 4em;
+  padding: 4em;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -50,9 +50,9 @@
   filter: drop-shadow(0 2px 3px rgba(black, 0.5));
 
   @include mq($until: tablet) {
-    font-size: 3rem;
+    font-size: 3em;
     // Address jump when address bar hides on scroll down
-    top: 8rem;
+    top: 8em;
     transform: translate(-50%, 0);
   }
 }
@@ -79,8 +79,8 @@
 
 #homeImg {
   max-width: 100%;
-  width: 25rem;
+  width: 25em;
   float: right;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
+  margin-left: 1em;
+  margin-bottom: 1em;
 }

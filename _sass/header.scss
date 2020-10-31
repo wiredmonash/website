@@ -2,8 +2,8 @@
 @import "mobile_nav";
 
 @mixin header-vertical-margins {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 $social-icon-size: 1.5em;
@@ -19,8 +19,8 @@ $social-icon-size: 1.5em;
   width: 100%;
   will-change: transform;
   transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
-  min-height: 3rem;
-  padding: 0.25rem $gutter-padding;
+  min-height: 3em;
+  padding: 0.25em $gutter-padding;
   background-color: darken($wired-purple, 2%);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4), 0 6px 5px 0 rgba(0, 0, 0, 0.1);
   z-index: 1;
@@ -81,7 +81,7 @@ $active-font-weight: 700;
   color: rgba(#fff, 0.8);
   transition: color 0.2s, border-color 0.2s;
   border-bottom: 2px solid transparent;
-  padding: 0 0.1rem;
+  padding: 0 0.1em;
   display: block; // Stop pseudo-element ::after wrapping onto next line in mobile menu
 
   :hover,
@@ -139,7 +139,7 @@ $active-font-weight: 700;
   }
 
   a {
-    margin: 0.35rem 0.6rem;
+    margin: 0.35em 0.6em;
     white-space: nowrap;
   }
 
@@ -169,7 +169,7 @@ $active-font-weight: 700;
   }
 
   a {
-    margin-left: 0.75rem;
+    margin-left: 0.75em;
   }
 }
 

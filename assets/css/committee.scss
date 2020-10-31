@@ -4,31 +4,31 @@
 .committee-grid {
   display: grid;
   width: 100%;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
   justify-items: center;
 }
 
 .committee-card {
   display: flex;
   flex-direction: column;
-  max-width: 20rem;
+  max-width: 20em;
 }
 
 .committee-image {
   object-fit: contain;
-  height: 16rem;
+  height: 16em;
   width: 100%;
 }
 
 .committee-text {
-  padding: 1rem;
+  padding: 1em;
   color: #232323;
 }
 
 .committee-name {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1.25em;
   line-height: 1.5;
 }
 

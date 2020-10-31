@@ -5,11 +5,11 @@
 
 .membershipPerks {
   display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: grid-auto-resize(20rem);
+  grid-gap: 2em;
+  grid-template-columns: grid-auto-resize(20em);
   justify-items: center;
   @include mq($until: tablet) {
-    grid-template-columns: grid-auto-resize(15rem);
+    grid-template-columns: grid-auto-resize(15em);
   }
 }
 
