@@ -23,13 +23,11 @@ The default server address is `http://127.0.0.1:4000`. If this port is already t
 <a href="{{ '/contact' | relative_url }}">Contact</a>
 ```
 
-- Current breakpoints used for media queries:
-  - 480px
-  - 768px
-
 ### Styles
 
 - Stylesheets are written in SASS and use the `.scss` extension. Styles common across pages are put in the `_sass` folder and imported in `assets/css/styles.scss`. Page-specific styles are put in `assets/css` and must have front matter at the top (the two lines of `---`) to be processed by Jekyll.
+
+Media queries use the `sass-mq` mixin at <https://github.com/sass-mq/sass-mq>. See this for tips on writing media queries.
 
 ### Adding new pages
 
