@@ -12,9 +12,10 @@
     <meta charset="UTF-8">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
     {% for css_name in page.extra_css %}
-        <link rel="stylesheet" href="assets/css/{{ css_name }}">
+        {% capture absolute_url %}/assets/css/{{ css_name }}{% endcapture %}
+        <link rel="stylesheet" href="{{ absolute_url | relative_url }}">
     {% endfor %}
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
@@ -23,26 +24,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Icons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/icons/apple-touch/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/icons/apple-touch/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/icons/apple-touch/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/icons/apple-touch/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/icons/apple-touch/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/icons/apple-touch/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/icons/apple-touch/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/icons/apple-touch/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icons/apple-touch/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/icons/android/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icons/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/icons/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/icons/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/images/icons/android/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ '/assets/images/icons/apple-touch/apple-icon-57x57.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ '/assets/images/icons/apple-touch/apple-icon-60x60.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ '/assets/images/icons/apple-touch/apple-icon-72x72.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ '/assets/images/icons/apple-touch/apple-icon-76x76.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ '/assets/images/icons/apple-touch/apple-icon-114x114.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ '/assets/images/icons/apple-touch/apple-icon-120x120.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ '/assets/images/icons/apple-touch/apple-icon-144x144.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ '/assets/images/icons/apple-touch/apple-icon-152x152.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/icons/apple-touch/apple-icon-180x180.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/icons/favicon/favicon-32x32.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ '/assets/images/icons/favicon/favicon-96x96.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href=" {{ '/assets/images/icons/favicon/favicon-16x16.png' | relative_url }}">
+    <link rel="manifest" href=" {{ '/assets/images/icons/android/manifest.json' | relative_url }}">
     <meta name="msapplication-TileColor" content="#6e297e">
-    <meta name="msapplication-TileImage" content="assets/images/icons/microsoft/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="{{ '/assets/images/icons/microsoft/ms-icon-144x144.png' | relative_url }}">
     <meta name="theme-color" content="#6e297e">
-    <script src="assets/scripts/turbolinks.js" type="text/javascript"></script>
-    <script src="assets/scripts/header.js" type="text/javascript"></script>
-    <script src="assets/scripts/landingFadeInOnce.js" type="text/javascript"></script>
+    <script src="{{ '/assets/scripts/turbolinks.js' | relative_url }}" type="text/javascript"></script>
+    <script src="{{ '/assets/scripts/header.js' | relative_url }}" type="text/javascript"></script>
+    <script src="{{ '/assets/scripts/landingFadeInOnce.js' | relative_url }}" type="text/javascript"></script>
 </head>
 
 <body>
