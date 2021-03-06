@@ -11,6 +11,11 @@
         {% assign sorted_pages = site.pages | sort:"order" %}
         {% for node in sorted_pages %}
             {% if node.order >= 1 %}
+                {% if node.order == 10 %}
+                        <li>
+                            <a href="https://blog.monashicpc.com" class="show-active" data-content="ICPC Team" target="_blank">ICPC Team</a>
+                        </li>
+                    {% endif %}
                 <li class="mobile-menu__default-li">
                     <a href="{{ node.url | relative_url }}" class="show-active" {% if page.url == node.url %} data-active {%endif %} data-content="{{node.title}}">{{node.title}}</a>
                 </li>
@@ -20,6 +25,7 @@
             {% include social_icon.html href="http://facebook.com/WiredMonash" title="WIRED Facebook" img_alt="Facebook" img_src="/assets/images/icons/logo-facebook.svg" %}
             {% include social_icon.html href="https://discord.gg/WNUDsjQ" title="WIRED Discord" img_alt="Discord" img_src="/assets/images/icons/logo-discord.svg" %}
             {% include social_icon.html href="https://www.instagram.com/wiredmonash/" title="WIRED Instagram" img_alt="Instagram" img_src="/assets/images/icons/logo-instagram.svg" %}
+            {% include social_icon.html href="mailto:wired@monashclubs.org" title="WIRED Email" img_alt="Email" img_src="/assets/images/icons/logo-email.svg" %}
         </li>
     </ul>
     <div class="dark-overlay" id="dark-overlay"></div>
