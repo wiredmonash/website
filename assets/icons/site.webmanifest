@@ -1,0 +1,20 @@
+{
+    "name": "WIRED",
+    "short_name": "WIRED",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png?v=OmrAOE0YQg",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png?v=OmrAOE0YQg",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#6e297e",
+    "background_color": "#6e297e",
+    "start_url": "https://wired.org.au",
+    "display": "standalone"
+}
