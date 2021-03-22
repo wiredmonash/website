@@ -30,6 +30,20 @@ committee:
   name: Ryhan Joshi
   title: General Representative
   image: Ryhan_Joshi.jpg
+  
+mcpc:
+- 
+  name: Jackson Goerner
+  title: President & Secretary
+  image: Jackson_Goerner.jpg
+- 
+  name: Ali Toosi
+  title: Vice President
+  image: Ali_Toosi.jpg
+- 
+  name: Amin Sakzad
+  title: Treasurer
+  image: Amin_Sakzad.png
 ---
 <h2>Committee</h2>
 
@@ -75,4 +89,18 @@ committee:
 
 <div>
     Currently recruiting
+</div>
+
+<h2>MCPC</h2>
+
+<div class="committee-grid">
+  {% for member in page.mcpc %}
+  <div class="committee-card">
+    <img class="committee-image" src="assets/images/committee/{{ member.image }}" height=320 width="240" alt="{{ member.name }}: {{ member.title }}">
+    <div class="committee-text">
+      <h4 class="committee-name">{{ member.name }}</h4>
+      <span class="committee-title">{{ member.title }}</span>
+    </div>
+  </div>
+  {% endfor %}
 </div>
