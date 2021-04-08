@@ -33,9 +33,10 @@ permalink: /:title
 
 # Collections
 # Collections dir: add collections as subdirs here (e.g. "books" collection as collections/_books)
-collections_dir: collections
 collections:
   - committee
+  - industry
+  - mcpc
 
 # Build settings
 theme: minima
