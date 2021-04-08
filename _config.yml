@@ -20,12 +20,13 @@
 
 title: WIRED
 email: fits@monashclubs.org
-description: >- # this means to ignore newlines until "baseurl:"
-  Welcome to WIRED! We are the official Faculty of IT student society at Monash University.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://wired.org.au" # the base hostname & protocol for your site, e.g. http://example.com
+description: >-
+  Welcome to WIRED! We are the official Faculty of IT student society at Monash
+  University.
+baseurl: '' # the subpath of your site, e.g. /blog
+url: 'https://wired.org.au' # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
-github_username: wired-admin
+# github_username: wired-admin
 
 # Permalink setup: without extension
 permalink: /:title
@@ -34,11 +35,8 @@ permalink: /:title
 # Collections dir: add collections as subdirs here (e.g. "books" collection as collections/_books)
 collections:
   - committee
-  - industry
-  - mcpc
 
 # Build settings
-markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
