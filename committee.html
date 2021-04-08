@@ -31,7 +31,7 @@ committee:
   title: General Representative
   image: ryhanJoshi.jpg
 
-indSub:
+industry:
 -
 name: Scott Yip
 title: Industry Director
@@ -64,7 +64,6 @@ mcpc:
   image: aminSakzad.png
 ---
 <h2>Committee</h2>
-
 <div class="committee-grid">
     {% for member in page.committee %}
     <div class="committee-card">
@@ -77,40 +76,32 @@ mcpc:
     {% endfor %}
 </div>
 
-
-
-<h3>Education Subcommittee</h2>
-
-<div>
-    Currently recruiting
-</div>
-
-<h3>Events Subcommittee</h2>
-
-<div>
-    Currently recruiting
-</div>
-
 <h3>Industry Subcommittee</h2>
-
-<div>
-    Currently recruiting
-</div>
+  <div class="committee-grid">
+    {% for member in page.industry %}
+    <div class="committee-card">
+      <img class="committee-image" src="assets/images/committee/{{ member.image }}" height=320 width="240" alt="{{ member.name }}: {{ member.title }}">
+      <div class="committee-text">
+        <h4 class="committee-name">{{ member.name }}</h4>
+        <span class="committee-title">{{ member.title }}</span>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 
 <h3>Publications Subcommittee</h2>
+  <div>Currently recruiting</div>
 
-<div>
-    Currently recruiting
-</div>
+<h3>Education Subcommittee</h2>
+  <div>Currently recruiting</div>
+
+<h3>Events Subcommittee</h2>
+<div>Currently recruiting</div>
 
 <h2>Malaysian Chapter</h2>
-
-<div>
-    Currently recruiting
-</div>
+<div>Currently recruiting</div>
 
 <h2>MCPC Executive Team</h2>
-
 <div class="committee-grid">
   {% for member in page.mcpc %}
   <div class="committee-card">
