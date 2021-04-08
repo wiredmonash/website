@@ -10,44 +10,54 @@ committee:
   name: Gavin Douch
   title: President & ACSA President
   image: gavinDouch.jpg
+  email: president@wired.org.au
 - 
   name: Vibhas Kamal
   title: Vice President
   image: vibhasKamal.jpg
+  email: vicepresident@wired.org.au
 - 
   name: Kanako Bouyer
   title: Secretary
   image: kanakoBouyer.jpg
+  email: secretary@wired.org.au
 - 
   name: Aaron Chao
   title: Treasurer
   image: aaronChao.jpg
+  email: treasurer@wired.org.au
 - 
   name: Keaton Tang
   title: General Representative
   image: keatonTang.jpg
+  email: genreps@wired.org.au
 - 
   name: Ryhan Joshi
   title: General Representative
   image: ryhanJoshi.jpg
+  email: genreps@wired.org.au
 
 industry:
 -
   name: Scott Yip
   title: Industry Director
   image: scottYip.png
+  email: ind.director@wired.org.au
 -
   name: Jonathan Lopez
   title: Industry Secretary
   image: jonathanLopez.jpg
+  email: ind.secretary@wired.org.au
 -
   name: Maureen Priscilla Rusli
   title: Sponsorship Officer
   image: aminSakzad.png
+  email: sponsorship@wired.org.au
 -
   name: Darcy Myring
   title: Careers Officer
   image: darcyMyring.png
+  email: careers.officer@wired.org.au
 
 mcpc:
 - 
@@ -69,39 +79,29 @@ mcpc:
     <div class="committee-card">
       <img class="committee-image" src="assets/images/committee/{{ member.image }}" height=320 width="240" alt="{{ member.name }}: {{ member.title }}">
       <div class="committee-text">
-        <h4 class="committee-name">{{ member.name }}</h4>
+        <a href="mailto:{{ member.email }}">
+          <h4 class="committee-name">{{ member.name }}</h4>
+        </a>
         <span class="committee-title">{{ member.title }}</span>
       </div>
     </div>
     {% endfor %}
 </div>
 
-<h3>Industry Subcommittee</h2>
-  <div class="committee-grid">
-    {% for member in page.industry %}
-    <div class="committee-card">
-      <img class="committee-image" src="assets/images/committee/{{ member.image }}" height=320 width="240" alt="{{ member.name }}: {{ member.title }}">
-      <div class="committee-text">
-        <h4 class="committee-name">{{ member.name }}</h4>
-        <span class="committee-title">{{ member.title }}</span>
-      </div>
+<h2>Industry Subcommittee</h2>
+<div class="committee-grid">
+  {% for member in page.industry %}
+  <div class="committee-card">
+    <img class="committee-image" src="assets/images/committee/{{ member.image }}" height=320 width="240" alt="{{ member.name }}: {{ member.title }}">
+    <div class="committee-text">
+      <h4 class="committee-name">{{ member.name }}</h4>
+      <span class="committee-title">{{ member.title }}</span>
     </div>
-    {% endfor %}
   </div>
+  {% endfor %}
+</div>
 
-<h3>Publications Subcommittee</h2>
-  <div>Currently recruiting</div>
-
-<h3>Education Subcommittee</h2>
-  <div>Currently recruiting</div>
-
-<h3>Events Subcommittee</h2>
-<div>Currently recruiting</div>
-
-<h2>Malaysian Chapter</h2>
-<div>Currently recruiting</div>
-
-<h2>MCPC Executive Team</h2>
+<h2><a href="https://blog.monashicpc.com">MCPC</a> Executive Team</h2>
 <div class="committee-grid">
   {% for member in page.mcpc %}
   <div class="committee-card">
@@ -113,3 +113,15 @@ mcpc:
   </div>
   {% endfor %}
 </div>
+
+<h2>Publications Subcommittee</h2>
+<div>Currently recruiting</div>
+
+<h2>Education Subcommittee</h2>
+<div>Currently recruiting</div>
+
+<h2>Events Subcommittee</h2>
+<div>Currently recruiting</div>
+
+<h2>Malaysian Chapter</h2>
+<div>Currently recruiting</div>

@@ -8,11 +8,6 @@
             {% assign sorted_pages = site.pages | sort:"order" %}
             {% for node in sorted_pages %}
                 {% if node.order >= 1 %}
-                    {% if node.order == 10 %}
-                        <li>
-                            <a href="https://blog.monashicpc.com" class="show-active" data-content="ICPC Team" target="_blank">ICPC Team</a>
-                        </li>
-                    {% endif %}
                     <li>
                         <a href="{{ node.url | relative_url }}" class="show-active" {% if page.url == node.url %} data-active {%endif %} data-content="{{node.title}}">{{node.title}}</a>
                     </li>
