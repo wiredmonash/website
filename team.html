@@ -59,6 +59,33 @@ industry:
   image: darcyMyring.png
   email: careers.officer@wired.org.au
 
+publications:
+-
+  name: Devshi Janakantha
+  title: Publications Director
+  image: devshiJanakantha.png
+  email: pub.director@wired.org.au
+-
+  name: Michelle Oeum
+  title: Publications Secretary
+  image: michelleOeum.jpg
+  email: pub.secretary@wired.org.au
+-
+  name: Ruoqi Wang
+  title: Podcast Team Member
+  image: ruoqiWang.jpg
+  email: podcast@wired.org.au
+-
+  name: Sao Jun Hew
+  title: Social Media Officer
+  image: saoJunHew.jpg
+  email: socialmedia.officer@wired.org.au
+-
+  name: Tina Jiang
+  title: Newsletter Editor
+  image: tinaJiang.jpg
+  email: newsletter.editor@wired.org.au
+
 mcpc:
 - 
   name: Jackson Goerner
@@ -77,7 +104,7 @@ mcpc:
 <div class="committee-grid">
   {% for member in page.committee %}
     <div class="committee-card">
-      <img class="committee-image" src="assets/images/committee/{{ member.image }}" height=320 width="240" alt="{{ member.name }}: {{ member.title }}">
+      <img class="committee-image" src="assets/images/team/{{ member.image }}" height=320 width="240" alt="{{ member.name }}: {{ member.title }}">
       <div class="committee-text">
         <a href="mailto:{{ member.email }}">
           <h4 class="committee-name">{{ member.name }}</h4>
@@ -87,13 +114,13 @@ mcpc:
     </div>
   {% endfor %}
 </div>
-<p>Governed by the <a href="{{ '/assets/docs/constitution.pdf' | relative_url }}" target="_blank">Constitution</a>.</p>
+<p>Governed by the <a href="{{ '/assets/docs/constitution.pdf' | relative_url }}" target="_blank">Constitution</a>.<br><a href="mailto:committee@wired.org.au">Email Committee</a></p>
 
 <h2>Industry Subcommittee</h2>
 <div class="committee-grid">
   {% for member in page.industry %}
     <div class="committee-card">
-      <img class="committee-image" src="assets/images/committee/{{ member.image }}" height=320 width="240" alt="{{ member.name }}: {{ member.title }}">
+      <img class="committee-image" src="assets/images/team/{{ member.image }}" height=320 width="240" alt="{{ member.name }}: {{ member.title }}">
       <div class="committee-text">
         <a href="mailto:{{ member.email }}">
           <h4 class="committee-name">{{ member.name }}</h4>
@@ -103,13 +130,30 @@ mcpc:
     </div>
   {% endfor %}
 </div>
-<p>Governed by the <a href="{{ '/assets/docs/indSubToR.pdf' | relative_url }}" target="_blank">IndSub ToR</a>.</p>
+<p>Governed by the <a href="{{ '/assets/docs/indSubToR.pdf' | relative_url }}" target="_blank">IndSub ToR</a>.<br><a href="mailto:industry@wired.org.au">Email IndSub</a></p>
+
+<h2>Publications Subcommittee</h2>
+<div class="committee-grid">
+  {% for member in page.publications %}
+  <div class="committee-card">
+    <img class="committee-image" src="assets/images/team/{{ member.image }}" height=320 width="240" alt="{{ member.name }}: {{ member.title }}">
+    <div class="committee-text">
+      <a href="mailto:{{ member.email }}">
+        <h4 class="committee-name">{{ member.name }}</h4>
+      </a>
+      <span class="committee-title">{{ member.title }}</span>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<div>Currently recruiting. <a href="https://docs.google.com/forms/d/e/1FAIpQLSdINeypsblr8Zk0dUgld43SPJLu0qLiLut5_E26bOzKgMDrBQ/viewform?usp=sf_link">Click here to apply</a>.</div>
+<p>Governed by the <a href="{{ '/assets/docs/pubSubToR.pdf' | relative_url }}" target="_blank">PubSub ToR</a>.<br><a href="mailto:industry@wired.org.au">Email PubSub</a></p>
 
 <h2><a href="https://blog.monashicpc.com" target="_blank">MCPC Executive Team</a></h2>
 <div class="committee-grid">
   {% for member in page.mcpc %}
     <div class="committee-card">
-      <img class="committee-image" src="assets/images/committee/{{ member.image }}" height=320 width="240" alt="{{ member.name }}: {{ member.title }}">
+      <img class="committee-image" src="assets/images/team/{{ member.image }}" height=320 width="240" alt="{{ member.name }}: {{ member.title }}">
       <div class="committee-text">
         <h4 class="committee-name">{{ member.name }}</h4>
         <span class="committee-title">{{ member.title }}</span>
@@ -119,18 +163,14 @@ mcpc:
 </div>
 <p>Governed by the <a href="https://blog.monashicpc.com/constitution/" target="_blank">MCPC Constitution</a>.</p>
 
-<h2>Publications Subcommittee</h2>
-<div>Currently recruiting.</div>
-<p>Governed by the <a href="{{ '/assets/docs/pubSubToR.pdf' | relative_url }}" target="_blank">PubSub ToR</a>.</p>
-
 <h2>Education Subcommittee</h2>
-<div>Currently recruiting.</div>
+<div>Currently recruiting. <a href="https://docs.google.com/forms/d/e/1FAIpQLSdINeypsblr8Zk0dUgld43SPJLu0qLiLut5_E26bOzKgMDrBQ/viewform?usp=sf_link">Click here to apply</a>.</div>
 <p>Governed by the <a href="{{ '/assets/docs/eduSubToR.pdf' | relative_url }}" target="_blank">EduSub ToR</a>.</p>
 
 <h2>Events Subcommittee</h2>
-<div>Currently recruiting.</div>
+<div>Currently recruiting. <a href="https://docs.google.com/forms/d/e/1FAIpQLSdINeypsblr8Zk0dUgld43SPJLu0qLiLut5_E26bOzKgMDrBQ/viewform?usp=sf_link">Click here to apply</a>.</div>
 <p>Governed by the <a href="{{ '/assets/docs/eveSubToR.pdf' | relative_url }}" target="_blank">EveSub ToR</a>.</p>
 
 <h2>Malaysian Chapter</h2>
-<div>Currently recruiting.</div>
+<div>Currently recruiting. <a href="https://docs.google.com/forms/d/e/1FAIpQLSdINeypsblr8Zk0dUgld43SPJLu0qLiLut5_E26bOzKgMDrBQ/viewform?usp=sf_link">Click here to apply</a>.</div>
 <p>Governed by the <a href="{{ '/assets/docs/malaysiaCharter.pdf' | relative_url }}" target="_blank">Malaysia Charter</a>.</p>
