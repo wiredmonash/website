@@ -86,6 +86,33 @@ publications:
   image: tinaJiang.jpg
   email: newsletter.editor@wired.org.au
 
+malaysia:
+-
+  name: Koay Tze Yuan
+  title: Head
+  image: tzeYuanKoay.jpg
+  email: mal.head@wired.org.au
+-
+  name: Yi Chuan Tey
+  title: Vice Head
+  image: chuanTeyYi.jpg
+  email: mal.vicehead@wired.org.au
+-
+  name: Avantika Mishra
+  title: Administrator
+  image: avantikaMishra.jpg
+  email: mal.admin@wired.org.au
+-
+  name: Zolyn Lang
+  title: General Constituent
+  image: zolynLang.jpg
+  email: mal.genconsts@wired.org.au
+-
+  name: Lee Jian Hui
+  title: General Constituent
+  image: jianHuiLee.jpg
+  email: mal.genconsts@wired.org.au
+
 mcpc:
 - 
   name: Jackson Goerner
@@ -149,6 +176,22 @@ mcpc:
 <div>Currently recruiting. <a href="https://docs.google.com/forms/d/e/1FAIpQLSdINeypsblr8Zk0dUgld43SPJLu0qLiLut5_E26bOzKgMDrBQ/viewform?usp=sf_link">Click here to apply</a>.</div>
 <p>Governed by the <a href="{{ '/assets/docs/pubSubToR.pdf' | relative_url }}" target="_blank">PubSub ToR</a>. <a href="mailto:publications@wired.org.au">Email PubSub</a>.</p>
 
+<h2>Malaysia Chapter Board</h2>
+<div class="committee-grid">
+  {% for member in page.malaysia %}
+  <div class="committee-card">
+    <img class="committee-image" src="assets/images/team/{{ member.image }}" alt="{{ member.name }}: {{ member.title }}">
+    <div class="committee-text">
+      <a href="mailto:{{ member.email }}">
+        <h4 class="committee-name">{{ member.name }}</h4>
+      </a>
+      <span class="committee-title">{{ member.title }}</span>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<p>Governed by the <a href="{{ '/assets/docs/malaysiaCharter.pdf' | relative_url }}" target="_blank">Malaysian Charter</a>.</p>
+
 <h2>MCPC Executive Team</h2>
 <div class="committee-grid">
   {% for member in page.mcpc %}
@@ -170,7 +213,3 @@ mcpc:
 <h2>Events Subcommittee</h2>
 <div>Currently recruiting. <a href="https://docs.google.com/forms/d/e/1FAIpQLSdINeypsblr8Zk0dUgld43SPJLu0qLiLut5_E26bOzKgMDrBQ/viewform?usp=sf_link">Click here to apply</a>.</div>
 <p>Governed by the <a href="{{ '/assets/docs/eveSubToR.pdf' | relative_url }}" target="_blank">EveSub ToR</a>.</p>
-
-<h2>Malaysian Chapter (Faculty of Information Technology Society Malaysia)</h2>
-<div>Currently recruiting.</div>
-<p>Governed by the <a href="{{ '/assets/docs/malaysiaCharter.pdf' | relative_url }}" target="_blank">Malaysian Charter</a>.</p>
