@@ -104,7 +104,7 @@ mcpc:
 <div class="committee-grid">
   {% for member in page.committee %}
     <div class="committee-card">
-      <img class="committee-image" src="assets/images/team/{{ member.image }}" height=320 width="240" alt="{{ member.name }}: {{ member.title }}">
+      <img class="committee-image" src="assets/images/team/{{ member.image }}" alt="{{ member.name }}: {{ member.title }}">
       <div class="committee-text">
         <a href="mailto:{{ member.email }}">
           <h4 class="committee-name">{{ member.name }}</h4>
@@ -120,7 +120,7 @@ mcpc:
 <div class="committee-grid">
   {% for member in page.industry %}
     <div class="committee-card">
-      <img class="committee-image" src="assets/images/team/{{ member.image }}" height=320 width="240" alt="{{ member.name }}: {{ member.title }}">
+      <img class="committee-image" src="assets/images/team/{{ member.image }}" alt="{{ member.name }}: {{ member.title }}">
       <div class="committee-text">
         <a href="mailto:{{ member.email }}">
           <h4 class="committee-name">{{ member.name }}</h4>
@@ -136,7 +136,7 @@ mcpc:
 <div class="committee-grid">
   {% for member in page.publications %}
   <div class="committee-card">
-    <img class="committee-image" src="assets/images/team/{{ member.image }}" height=320 width="240" alt="{{ member.name }}: {{ member.title }}">
+    <img class="committee-image" src="assets/images/team/{{ member.image }}" alt="{{ member.name }}: {{ member.title }}">
     <div class="committee-text">
       <a href="mailto:{{ member.email }}">
         <h4 class="committee-name">{{ member.name }}</h4>
@@ -153,7 +153,7 @@ mcpc:
 <div class="committee-grid">
   {% for member in page.mcpc %}
     <div class="committee-card">
-      <img class="committee-image" src="assets/images/team/{{ member.image }}" height=320 width="240" alt="{{ member.name }}: {{ member.title }}">
+      <img class="committee-image" src="assets/images/team/{{ member.image }}" alt="{{ member.name }}: {{ member.title }}">
       <div class="committee-text">
         <h4 class="committee-name">{{ member.name }}</h4>
         <span class="committee-title">{{ member.title }}</span>
@@ -173,4 +173,4 @@ mcpc:
 
 <h2>Malaysian Chapter (Faculty of Information Technology Society Malaysia)</h2>
 <div>Currently recruiting.</div>
-<p>Governed by the <a href="{{ '/assets/docs/malaysiaCharter.pdf' | relative_url }}" target="_blank">Malaysia Charter</a>.</p>
+<p>Governed by the <a href="{{ '/assets/docs/malaysiaCharter.pdf' | relative_url }}" target="_blank">Malaysian Charter</a>.</p>
