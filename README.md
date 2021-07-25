@@ -1,4 +1,19 @@
-# WIRED Website
+<div align="center">
+
+<img src="assets/images/logo-white-on-purple-500.png" width="300px">
+
+<p style="font-size:24px">THE IT STUDENTS SOCIETY</p>
+
+Monash Univeristy • [wired.org.au](https://wired.org.au) <br><br>
+[<img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />](http://facebook.com/WiredMonash)
+[<img alt="Discord" src="https://img.shields.io/badge/Discord-%237289DA.svg?style=for-the-badge&logo=discord&logoColor=white"/>](https://discord.gg/WNUDsjQ)
+[<img alt="Instagram" src="https://img.shields.io/badge/instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white"/>](https://www.instagram.com/wiredmonash/)
+
+</div>
+
+---
+
+# Welcome to WIRED!
 
 This is the repository for the WIRED website hosted at https://wired.org.au. The website is built using [Jekyll](https://jekyllrb.com/) and hosted on Github Pages.
 
