@@ -40,6 +40,11 @@ collections:
 theme: minima
 plugins:
   - jekyll-feed
+  - jemoji
+
+emoji:
+  src: "https://github.githubassets.com/images/icons/"
+  
 # enable strict front matter by default
 strict_front_matter: true
 # Exclude from processing.

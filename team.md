@@ -95,11 +95,16 @@ publications:
   title: Social Media Officer
   image: saoJunHew.jpg
   email: socialmedia.officers@wired.org.au
-
+-
   name: Yashdeep S Dahiya
   title: Technical Officer
   image: yashdeepDahiya.png
-  email: yashdeep.dahiya@wired.org.au
+  email: technical.officer@wired.org.au
+-
+  name: Nguyen Manh Hai Vo
+  title: Design Officer
+  image: haiVo.jpg
+  email: design@wired.org.au
 
 malaysia:
 -
@@ -171,8 +176,15 @@ mcpc:
     </div>
   {% endfor %}
 </div>
-<p>Governed by the <a href="{{ '/assets/docs/constitution.pdf' | relative_url }}" target="_blank">Constitution</a>. <a href="mailto:committee@wired.org.au">Email the Committee</a>.</p>
+<br>
+<!-- <p>Governed by the <a href="{{ '/assets/docs/constitution.pdf' | relative_url }}" target="_blank">Constitution</a>. <a href="mailto:committee@wired.org.au">Email the Committee</a>.</p> -->
+<div markdown="1" align="center">
+*Governed by the [Constitution](assets/docs/constitution.pdf)* • *Email the Committee: [committee@wired.org.au](mailto:committee@wired.org.au)*
 
+---
+
+</div>
+<br>
 <h2>Industry Subcommittee</h2>
 <div class="committee-grid">
   {% for member in page.industry %}
@@ -187,8 +199,15 @@ mcpc:
     </div>
   {% endfor %}
 </div>
-<p>Governed by the <a href="{{ '/assets/docs/indSubToR.pdf' | relative_url }}" target="_blank">IndSub ToR</a>. <a href="mailto:industry@wired.org.au">Email IndSub</a>.</p>
+<br>
+<!-- <p>Governed by the <a href="{{ '/assets/docs/indSubToR.pdf' | relative_url }}" target="_blank">IndSub ToR</a>. <a href="mailto:industry@wired.org.au">Email IndSub</a>.</p> -->
+<div markdown="1" align="center">
+*Governed by the [Industry Subcommittee Terms of Reference](assets/docs/indSubToR.pdf)* • *Email: [industry@wired.org.au](mailto:industry@wired.org.au)*
 
+
+---
+</div>
+<br>
 <h2>Publications Subcommittee</h2>
 <div class="committee-grid">
   {% for member in page.publications %}
@@ -203,9 +222,17 @@ mcpc:
   </div>
   {% endfor %}
 </div>
-<div>Currently recruiting. <a href="https://docs.google.com/forms/d/e/1FAIpQLSdINeypsblr8Zk0dUgld43SPJLu0qLiLut5_E26bOzKgMDrBQ/viewform?usp=sf_link">Click here to apply</a>.</div>
-<p>Governed by the <a href="{{ '/assets/docs/pubSubToR.pdf' | relative_url }}" target="_blank">PubSub ToR</a>. <a href="mailto:publications@wired.org.au">Email PubSub</a>.</p>
+<br>
+<div markdown="1">
+**Currently recruiting » [Click here to apply!](https://docs.google.com/forms/d/e/1FAIpQLSdINeypsblr8Zk0dUgld43SPJLu0qLiLut5_E26bOzKgMDrBQ/viewform?usp=sf_link)**
+</div>
+<br>
+<div markdown="1" align="center">
+*Governed by the [Publications Subcommittee Terms of Reference](assets/docs/pubSubToR.pdf)* • *Email: [publications@wired.org.au](mailto:publications@wired.org.au)*
 
+---
+</div>
+<br>
 <h2>Malaysia Chapter Board</h2>
 <div class="committee-grid">
   {% for member in page.malaysia %}
@@ -220,8 +247,13 @@ mcpc:
   </div>
   {% endfor %}
 </div>
-<p>Governed by the <a href="{{ '/assets/docs/malaysiaCharter.pdf' | relative_url }}" target="_blank">Malaysia Charter</a>. <a href="mailto:malaysia.board@wired.org.au">Email the Malaysia Chapter Board</a>.</p>
+<br>
+<div markdown="1" align="center">
+*Governed by the [Malaysia Charter](assets/docs/malaysiaCharter.pdf)* • *Email: [malaysia.board@wired.org.au](mailto:malaysia.board@wired.org.au)*
 
+---
+</div>
+<br>
 <h2>MCPC Executive Team</h2>
 <div class="committee-grid">
   {% for member in page.mcpc %}
@@ -234,12 +266,35 @@ mcpc:
     </div>
   {% endfor %}
 </div>
-<p>Governed by the <a href="https://blog.monashicpc.com/constitution/" target="_blank">MCPC Constitution</a>. <a href="https://blog.monashicpc.com" target="_blank">Visit website</a>.</p>
+<br>
+<div markdown="1" align="center">
+*Governed by the [MCPC Constitution](https://blog.monashicpc.com/constitution/)* • *Visit [website](https://blog.monashicpc.com)*
 
+---
+</div>
+<br>
 <h2>Education Subcommittee</h2>
-<div>Currently recruiting. <a href="https://docs.google.com/forms/d/e/1FAIpQLSdINeypsblr8Zk0dUgld43SPJLu0qLiLut5_E26bOzKgMDrBQ/viewform?usp=sf_link">Click here to apply</a>.</div>
-<p>Governed by the <a href="{{ '/assets/docs/eduSubToR.pdf' | relative_url }}" target="_blank">EduSub ToR</a>.</p>
+<!-- <div>Currently recruiting. <a href="https://docs.google.com/forms/d/e/1FAIpQLSdINeypsblr8Zk0dUgld43SPJLu0qLiLut5_E26bOzKgMDrBQ/viewform?usp=sf_link">Click here to apply</a>.</div>
+<p>Governed by the <a href="{{ '/assets/docs/eduSubToR.pdf' | relative_url }}" target="_blank">EduSub ToR</a>.</p> -->
+<div markdown="1">
+**Currently recruiting » [Click here to apply!](https://docs.google.com/forms/d/e/1FAIpQLSdINeypsblr8Zk0dUgld43SPJLu0qLiLut5_E26bOzKgMDrBQ/viewform?usp=sf_link)**
+</div>
+<br>
+<div markdown="1" align="center">
+*Governed by the [Education Subcommittee Terms of Reference](assets/docs/eduSubToR.pdf)* 
 
+---
+</div>
+<br>
 <h2>Events Subcommittee</h2>
-<div>Currently recruiting. <a href="https://docs.google.com/forms/d/e/1FAIpQLSdINeypsblr8Zk0dUgld43SPJLu0qLiLut5_E26bOzKgMDrBQ/viewform?usp=sf_link">Click here to apply</a>.</div>
-<p>Governed by the <a href="{{ '/assets/docs/eveSubToR.pdf' | relative_url }}" target="_blank">EveSub ToR</a>.</p>
+<!-- <div>Currently recruiting. <a href="https://docs.google.com/forms/d/e/1FAIpQLSdINeypsblr8Zk0dUgld43SPJLu0qLiLut5_E26bOzKgMDrBQ/viewform?usp=sf_link">Click here to apply</a>.</div>
+<p>Governed by the <a href="{{ '/assets/docs/eveSubToR.pdf' | relative_url }}" target="_blank">EveSub ToR</a>.</p> -->
+<div markdown="1">
+**Currently recruiting » [Click here to apply!](https://docs.google.com/forms/d/e/1FAIpQLSdINeypsblr8Zk0dUgld43SPJLu0qLiLut5_E26bOzKgMDrBQ/viewform?usp=sf_link)**
+</div>
+<br>
+<div markdown="1" align="center">
+*Governed by the [Events Subcommittee Terms of Reference](assets/docs/eveSubToR.pdf)* 
+
+---
+</div>
