@@ -41,6 +41,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jemoji
+  - jekyll-spaceship
 
 emoji:
   src: "https://github.githubassets.com/images/icons/"
