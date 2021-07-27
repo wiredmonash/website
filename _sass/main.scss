@@ -1,5 +1,6 @@
 @import "shared";
 @import "motion";
+@import "footer";
 
 *,
 *::before,
@@ -64,14 +65,14 @@ ol {
   line-height: 1.6;
 }
 
-footer {
-  align-self: flex-end;
-  width: 100%;
-  text-align: center;
-  font-size: 0.75em;
-  opacity: 0.8;
-  padding: 0 $gutter-padding 1em;
-}
+// footer {
+//   align-self: flex-end;
+//   width: 100%;
+//   text-align: center;
+//   font-size: 0.75em;
+//   opacity: 0.8;
+//   padding: 0 $gutter-padding 1em;
+// }
 
 .no-anim * {
   &,

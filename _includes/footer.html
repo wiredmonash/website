@@ -1,1 +1,65 @@
-<footer>&copy;2021 Faculty of Information Technology Society (WIRED Monash).</footer>
+<!-- <footer>&copy;2021 Faculty of Information Technology Society (WIRED Monash).</footer> -->
+
+<footer class="site-footer" id="site-footer">
+    <div class="title">
+        <a href="{{ '/' | relative_url }}" title="WIRED Home">
+            <img alt="WIRED" height="28" src="{{ '/assets/images/logoWhite.png' | relative_url }}">
+        </a>
+    </div>
+    <div class="footer-wrapper">
+        <div class="footer-col1">
+            <p class="footer-header footer-content" >About Us</p>
+            <p class="footer-content footer-paragraph">
+                Our club is a registered academic club with Monash Clubs and Societies.<br>
+                &copy;  {{ 'now' | date: "%Y" }} Faculty of Information Technology Society (WIRED Monash) <br>
+            </p>
+        </div>
+        <div class="footer-col2">
+            <p class="footer-header footer-content" >Know more</p>
+            <p class="footer-content footer-paragraph">
+                <a href="{{ '/team' | relative_url }}" class="footer-link" :link :visited :hover>
+                    Our Team
+                </a>
+                <br>
+                <a href="{{ '/sponsors' | relative_url }}" class="footer-link" :link :visited :hover>
+                    Sponsors
+                </a>
+                <br>
+                <a href="{{ '/assets/docs/constitution.pdf' | relative_url }}" class="footer-link" :link :visited :hover>
+                    Constitution
+                </a>
+                <br>
+            </p>
+        </div>
+        <div class="footer-col3">
+            <p class="footer-header footer-content" >Connect with Us</p>
+            <p class="footer-content footer-paragraph">
+                <a href="{{ 'https://clubs.msa.monash.edu/organisation/7236/' | relative_url }}" class="footer-link" :link :visited :hover>
+                    Become a Member
+                </a>
+                <br>
+                <a href="{{ 'https://docs.google.com/forms/d/e/1FAIpQLSdINeypsblr8Zk0dUgld43SPJLu0qLiLut5_E26bOzKgMDrBQ/viewform?usp=sf_link' | relative_url }}" class="footer-link" :link :visited :hover>
+                    We're Hiring
+                </a>
+                <br>
+                <a href="{{ '/contact' | relative_url }}" class="footer-link" :link :visited :hover>
+                    Contact
+                </a>
+                <br>
+                Follow Us
+                <a href="http://facebook.com/WiredMonash">
+                    <img alt="Facebook" src="{{ '/assets/images/icons/logo-facebook.svg' | relative_url }}" class="connect-img": link :hover: visited>
+                </a>
+                <a href="https://discord.gg/WNUDsjQ">
+                    <img alt="Discord" src="{{ '/assets/images/icons/logo-discord.svg' | relative_url }}" class="connect-img": link :hover: visited>
+                </a>
+                <a href="https://www.instagram.com/wiredmonash/">
+                    <img alt="Instagram" src="{{ '/assets/images/icons/logo-instagram.svg' | relative_url }}" class="connect-img": link :hover: visited>
+                </a>
+                <br>
+                
+            </p>
+        </div>
+</div>
+
+</footer>
