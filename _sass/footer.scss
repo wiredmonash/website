@@ -12,38 +12,45 @@ footer {
   }
 
   .title {
-    margin: 44px 0px 24px 260px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 44px 0% 24px 0%;
+    margin-left: 18.2%;
   }
 
   .footer-wrapper {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: top;
     justify-content: center;
-    padding: 4px 266px 0px 266px;
+    padding: 0px 0% 0% 0%;
+    margin: 0 0 40px 0;
   }
 
   .footer-col1 {
     text-align: left;
     vertical-align: top;
     align-items: top;
-    margin: 4px 0px 35px 0px;
-    width: 40vw;
-    padding-right: 10pc;
+    margin: 0 0 0 0;
+    width: 24%;
+    padding-right: 2%;
+    margin-right: 7%;
   }
 
   .footer-col2 {
     text-align: justify;
     vertical-align: top;
-    margin: 4px 0px 35px 0px;
-    width: 20vw;
+    margin: 0 0 0 0;
+    width: 16%;
   }
 
   .footer-col3 {
     text-align: justify;
     vertical-align: top;
-    margin: 4px 0px 35px 0px;
-    width: 20vw;
+    margin: 0 0 0 0;
+    width: 16%;
   }
   
   .footer-list {
@@ -63,7 +70,7 @@ footer {
   
   .footer-link {
     // font-size: 0.75em;
-    padding: 0 5px 0 0;
+    padding: 0 0px 0 0;
   }
   
   a.footer-link:link, a.footer-link:visited {
