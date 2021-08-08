@@ -1,5 +1,5 @@
 ---
-name: WIRED_in
+podcastName: WIRED_in
 club: Monash WIRED
 email: podcast@wired.org.au
 description: The Official Monash WIRED podcast. Want to know the best uni hacks? Uncover hidden conspiracies? And stay connected to the latest news around the Monash campus? Plug in your headphones and stay WIRED_in. Hosted by Edison Vong and Ruoqi Wang.
@@ -17,14 +17,14 @@ episodes:
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
 	<channel>
-		<title>{{ page.name }}</title>
+		<title>{{ page.podcastName }}</title>
 		<description>{{ page.description }}</description>
-		<link>{{ '' | relative_url }}</link>
+		<link>{{ '/' | relative_url }}</link>
 		<language>en-au</language>
 		<copyright>Copyright {{ 'now' | date: "%Y" }}</copyright>
-		<lastBuildDate>{{ page.date | date_to_rfc822 }}</lastBuildDate>
+		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 		<pubDate>Sun, 8 Aug 2021 11:30:00 +1000</pubDate>
-		<docs>{{ '' | relative_url }}</docs>
+		<docs>{{ '/' | relative_url }}</docs>
 		<webMaster>{{ page.email }}</webMaster>
 		<itunes:author>{{ page.club }}</itunes:author>
 		<itunes:subtitle>{{ page.description }}</itunes:subtitle>
@@ -41,7 +41,7 @@ episodes:
 		{% for episode in page.episodes %}
 		<item>
 			<title>{{ page.name }} #{{ episode.number }}: {{ episode.title }}</title>
-			<link>{{ '' | relative_url }}</link>
+			<link>{{ '/' | relative_url }}</link>
 			<guid>{{ '/assets/podcastEpisodes/' | relative_url }}{{ episode.number }}.mp3</guid>
 			<description>{{ episode.description }}</description>
 			<enclosure url="{{ '/assets/podcastEpisodes/' | relative_url }}{{ episode.number }}.mp3" length="{{ episode.bytes }}" type="audio/mpeg"/>
