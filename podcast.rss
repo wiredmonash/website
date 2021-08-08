@@ -12,7 +12,7 @@ episodes:
   date: 2021-08-09T14:00:00+10:00
   bytes:
   keywords: interview, Gavin Douch, President
-  duration: 00:45:00
+  duration: '00:45:00'
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
@@ -40,7 +40,7 @@ episodes:
 		</itunes:category>
 		{% for episode in page.episodes %}
 		<item>
-			<title>{{ page.name }} #{{ episode.number }}: {{ episode.title }}</title>
+			<title>{{ episode.number }}: {{ episode.title }}</title>
 			<link>{{ '/' | relative_url }}</link>
 			<guid>{{ '/assets/podcastEpisodes/' | relative_url }}{{ episode.number }}.mp3</guid>
 			<description>{{ episode.description }}</description>
