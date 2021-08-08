@@ -9,7 +9,7 @@ episodes:
   number: 1
   title:
   description:
-  date: Sun, 8 Aug 2021 14:30:00 +1000
+  date: 2021-08-09T14:00:00+10:00
   bytes:
   keywords: interview, Gavin Douch, President
   duration: 00:45:00
@@ -17,21 +17,21 @@ episodes:
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
 	<channel>
-		<title>{{ name }}</title>
-		<description>{{ description }}</description>
+		<title>{{ page.name }}</title>
+		<description>{{ page.description }}</description>
 		<link>{{ '' | relative_url }}</link>
 		<language>en-au</language>
-		<copyright>Copyright 2021</copyright>
-		<lastBuildDate>Sun, 8 Aug 2021 11:30:00 +1000</lastBuildDate>
+		<copyright>Copyright {{ 'now' | date: "%Y" }}</copyright>
+		<lastBuildDate>{{ page.date | date_to_rfc822 }}</lastBuildDate>
 		<pubDate>Sun, 8 Aug 2021 11:30:00 +1000</pubDate>
 		<docs>{{ '' | relative_url }}</docs>
-		<webMaster>{{ email }}</webMaster>
-		<itunes:author>{{ club }}</itunes:author>
-		<itunes:subtitle>{{ description }}</itunes:subtitle>
-		<itunes:summary>{{ description }}</itunes:summary>
+		<webMaster>{{ page.email }}</webMaster>
+		<itunes:author>{{ page.club }}</itunes:author>
+		<itunes:subtitle>{{ page.description }}</itunes:subtitle>
+		<itunes:summary>{{ page.description }}</itunes:summary>
 		<itunes:owner>
-			<itunes:name>{{ club }}</itunes:name>
-			<itunes:email>{{ email }}</itunes:email>
+			<itunes:name>{{ page.club }}</itunes:name>
+			<itunes:email>{{ page.email }}</itunes:email>
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		<itunes:image href="{{ '/assets/images/podcastImage.png' | relative_url }}"/>
@@ -40,14 +40,14 @@ episodes:
 		</itunes:category>
 		{% for episode in page.episodes %}
 		<item>
-			<title>{{ name }} #{{ episode.number }}: {{ episode.title }}</title>
+			<title>{{ page.name }} #{{ episode.number }}: {{ episode.title }}</title>
 			<link>{{ '' | relative_url }}</link>
 			<guid>{{ '/assets/podcastEpisodes/' | relative_url }}{{ episode.number }}.mp3</guid>
 			<description>{{ episode.description }}</description>
 			<enclosure url="{{ '/assets/podcastEpisodes/' | relative_url }}{{ episode.number }}.mp3" length="{{ episode.bytes }}" type="audio/mpeg"/>
 			<category>Information Technology</category>
-			<pubDate>{{ episode.date }}</pubDate>
-			<itunes:author>{{ club }}</itunes:author>
+			<pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
+			<itunes:author>{{ page.club }}</itunes:author>
 			<itunes:explicit>No</itunes:explicit>
 			<itunes:subtitle>{{ episode.description }}</itunes:subtitle>
 			<itunes:summary>{{ episode.description }}</itunes:summary>
