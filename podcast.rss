@@ -1,0 +1,54 @@
+---
+episodes:
+-
+  number: 0001
+  title:
+  description: The Official WIRED Podcast. Want to know the best Uni hacks? Uncover hidden conspiracies? And stay connected to the latest news around the Monash campus? Plug in your headphones and stay WIRED_in. Hosted by Edison Vong and Ruoqi Wang.
+  date: Sun, 8 Aug 2021 14:30:00 +1000
+  bytes:
+  keywords: interview, Gavin Douch, President
+
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+	<channel>
+		<title>WIRED_in</title>
+    	<description></description>
+    	<link>https://wired.org.au</link>
+    	<language>en-au</language>
+    	<copyright>Copyright 2021</copyright>
+    	<lastBuildDate>Sun, 8 Aug 2021 11:30:00 +1000</lastBuildDate>
+    	<pubDate>Sun, 8 Aug 2021 11:30:00 +1000</pubDate>
+    	<docs>https://wired.org.au</docs>
+    	<webMaster>podcast@wired.org.au</webMaster>
+    	<itunes:author>Monash WIRED</itunes:author>
+    	<itunes:subtitle></itunes:subtitle>
+    	<itunes:summary></itunes:summary>
+    	<itunes:owner>
+        	<itunes:name>Monash WIRED</itunes:name>
+        	<itunes:email>podcast@wired.org.au</itunes:email>
+    	</itunes:owner>
+    	<itunes:explicit>No</itunes:explicit>
+		<itunes:image href="https://wired.org.au/assets/images/podcastImage.png"/>
+		<itunes:category text="Technology">
+     		<itunes:category text="Information Technology"/>
+		</itunes:category>
+		{% for episode in page.episodes %}
+			<item>
+				<title>{{ episode.title }}</title>
+				<link>https://wired.org.au</link>
+				<guid>https://wired.org.au/assets/podcastEpisodes/{{ episode.title }}.mp3</guid>
+				<description>{{ episode.description }}</description>
+				<enclosure url="https://wired.org.au/assets/podcastEpisodes/{{ episode.title }}.mp3" length="{{ episode.bytes }}" type="audio/mpeg"/>
+				<category>Information Technology</category>
+				<pubDate>{{ episode.date }}</pubDate>
+				<itunes:author>Monash WIRED</itunes:author>
+				<itunes:explicit>No</itunes:explicit>
+				<itunes:subtitle></itunes:subtitle>
+				<itunes:summary></itunes:summary>
+				<itunes:duration>00:24:30</itunes:duration>
+				<itunes:keywords>WIRED, WIRED Monash, Monash University, technology, {{ episode.keywords }}</itunes:keywords>
+			</item>
+		{% endfor %}
+	</channel>
+</rss>
