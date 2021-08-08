@@ -12,7 +12,7 @@ episodes:
   date: Sun, 8 Aug 2021 14:30:00 +1000
   bytes:
   keywords: interview, Gavin Douch, President
-  duration: {% comment %}XX:XX:XX{% endcomment %}
+  duration: 00:45:00
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
