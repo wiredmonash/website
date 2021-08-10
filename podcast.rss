@@ -50,7 +50,7 @@ episodes:
 			<link>{{ '/' | absolute_url }}</link>
 			<guid>{{ '/assets/podcastEpisodes/' | absolute_url }}{{ episode.number }}.mp3</guid>
 			<description>{{ episode.description }}</description>
-			<content:encoded><![CDATA[{{ episode.extraDescription }}]]></content:encoded>
+			<content:encoded><![CDATA[{{ episode.extraDescription | markdownify }}]]></content:encoded>
 			<enclosure url="{{ '/assets/podcastEpisodes/' | absolute_url }}{{ episode.number }}.mp3" length="{{ episode.bytes }}" type="audio/mpeg"/>
 			<category>Information Technology</category>
 			<pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
