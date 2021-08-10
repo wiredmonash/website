@@ -8,18 +8,19 @@ episodes:
 -
   number: 1
   title: FIT1047 lovers all hate Shakespeare
-  description: "This week we sit down with WIRED President, FIT1047 fanboy, and Shakespeare hater, Gavin Douch to chat about living in Shepperton, turning spreadsheets into apps, and making the most out of University.
-  Including special content not broadcasted live!
+  description: This week we sit down with WIRED President, FIT1047 fanboy, and Shakespeare hater, Gavin Douch to chat about living in Shepparton, turning spreadsheets into apps, and making the most out of University.
+  extraDescription: -|
+    Including special content not broadcasted live!
 
-  Featuring:
-  • Ananya, Faculty of Arts
-  • Patrick, Faculty of Information Technology
-  • Vaasanthi, Faculty of Arts
+    Featuring:
+    • Ananya, Faculty of Arts
+    • Patrick, Faculty of Information Technology
+    • Vaasanthi, Faculty of Arts
 
-  Special thanks to JungBeen Lee for musical contributions."
+    Special thanks to JungBeen Lee for musical contributions.
   date: 2021-08-09T14:00:00+10:00
   bytes: 29000000
-  keywords: interview, Gavin Douch, President
+  keywords: interview, Gavin Douch, President, apps,
   duration: '01:00:58'
 ---
 <?xml version="1.0" encoding="UTF-8"?>
@@ -52,6 +53,11 @@ episodes:
 			<link>{{ '/' | absolute_url }}</link>
 			<guid>{{ '/assets/podcastEpisodes/' | absolute_url }}{{ episode.number }}.mp3</guid>
 			<description>{{ episode.description }}</description>
+			<content:encoded>
+				<![CDATA[
+					{{ extraDescription }}
+            	]]>
+            </content:encoded>
 			<enclosure url="{{ '/assets/podcastEpisodes/' | absolute_url }}{{ episode.number }}.mp3" length="{{ episode.bytes }}" type="audio/mpeg"/>
 			<category>Information Technology</category>
 			<pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
