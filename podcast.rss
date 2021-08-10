@@ -52,7 +52,7 @@ episodes:
 			<title>{{ episode.number }}: {{ episode.title }}</title>
 			<link>{{ '/' | absolute_url }}</link>
 			<guid>{{ '/assets/podcastEpisodes/' | absolute_url }}{{ episode.number }}.mp3</guid>
-			<description>{{ episode.description }}</description>
+			<description>{{ episode.description }}{{ episode.extraDescription }}</description>
 			<content:encoded>
 				<![CDATA[
 					{{ extraDescription }}
