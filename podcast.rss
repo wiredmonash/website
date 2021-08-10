@@ -34,7 +34,7 @@ episodes:
 		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 		<pubDate>Sun, 8 Aug 2021 11:30:00 +1000</pubDate>
 		<docs>{{ '/' | absolute_url }}</docs>
-		<webMaster>{{ page.email }} ({{ club }})</webMaster>
+		<webMaster>{{ page.email }} ({{ page.club }})</webMaster>
 		<itunes:author>{{ page.club }}</itunes:author>
 		<itunes:subtitle>{{ page.description }}</itunes:subtitle>
 		<itunes:summary>{{ page.description }}</itunes:summary>
@@ -50,11 +50,7 @@ episodes:
 			<link>{{ '/' | absolute_url }}</link>
 			<guid>{{ '/assets/podcastEpisodes/' | absolute_url }}{{ episode.number }}.mp3</guid>
 			<description>{{ episode.description }}</description>
-			<content:encoded>
-				<![CDATA[
-					{{ extraDescription }}
-            	]]>
-            </content:encoded>
+			<content:encoded><![CDATA[{{ extraDescription }}]]></content:encoded>
 			<enclosure url="{{ '/assets/podcastEpisodes/' | absolute_url }}{{ episode.number }}.mp3" length="{{ episode.bytes }}" type="audio/mpeg"/>
 			<category>Information Technology</category>
 			<pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
