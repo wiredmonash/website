@@ -7,12 +7,12 @@ description: The Official Monash WIRED podcast. Want to know the best uni hacks?
 episodes:
 -
   number: 1
-  title:
+  title: FIT1047 lovers all hate Shakespeare
   description:
   date: 2021-08-09T14:00:00+10:00
-  bytes:
+  bytes: 29000000
   keywords: interview, Gavin Douch, President
-  duration: '00:45:00'
+  duration: '01:00:58'
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
