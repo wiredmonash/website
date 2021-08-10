@@ -2,13 +2,21 @@
 podcastName: WIRED_in
 club: Monash WIRED
 email: podcast@wired.org.au
-description: The Official Monash WIRED podcast. Want to know the best uni hacks? Uncover hidden conspiracies? And stay connected to the latest news around the Monash campus? Plug in your headphones and stay WIRED_in. Hosted by Edison Vong and Ruoqi Wang.
+description: The Official Monash WIRED podcast. Want to know the best uni hacks, uncover hidden conspiracies, and stay connected to the latest news around the Monash campus? Plug in your headphones and stay WIRED_in. Hosted by Edison Vong and Ruoqi Wang.
 
 episodes:
 -
   number: 1
   title: FIT1047 lovers all hate Shakespeare
-  description:
+  description: "This week we sit down with WIRED President, FIT1047 fanboy, and Shakespeare hater, Gavin Douch to chat about living in Shepperton, turning spreadsheets into apps, and making the most out of University.
+  Including special content not broadcasted live!
+
+  Featuring:
+  • Ananya, Faculty of Arts
+  • Patrick, Faculty of Information Technology
+  • Vaasanthi, Faculty of Arts
+
+  Special thanks to JungBeen Lee for musical contributions."
   date: 2021-08-09T14:00:00+10:00
   bytes: 29000000
   keywords: interview, Gavin Douch, President
