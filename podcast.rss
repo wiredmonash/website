@@ -19,12 +19,12 @@ episodes:
 	<channel>
 		<title>{{ page.podcastName }}</title>
 		<description>{{ page.description }}</description>
-		<link>{{ '/' | relative_url }}</link>
+		<link>{{ '/' | absolute_url }}</link>
 		<language>en-au</language>
 		<copyright>Copyright {{ 'now' | date: "%Y" }}</copyright>
 		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 		<pubDate>Sun, 8 Aug 2021 11:30:00 +1000</pubDate>
-		<docs>{{ '/' | relative_url }}</docs>
+		<docs>{{ '/' | absolute_url }}</docs>
 		<webMaster>{{ page.email }}</webMaster>
 		<itunes:author>{{ page.club }}</itunes:author>
 		<itunes:subtitle>{{ page.description }}</itunes:subtitle>
@@ -34,17 +34,17 @@ episodes:
 			<itunes:email>{{ page.email }}</itunes:email>
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
-		<itunes:image href="{{ '/assets/images/podcastImage.png' | relative_url }}"/>
+		<itunes:image href="{{ '/assets/images/podcastImage.png' | absolute_url }}"/>
 		<itunes:category text="Technology">
 	 		<itunes:category text="Information Technology"/>
 		</itunes:category>
 		{% for episode in page.episodes %}
 		<item>
 			<title>{{ episode.number }}: {{ episode.title }}</title>
-			<link>{{ '/' | relative_url }}</link>
-			<guid>{{ '/assets/podcastEpisodes/' | relative_url }}{{ episode.number }}.mp3</guid>
+			<link>{{ '/' | absolute_url }}</link>
+			<guid>{{ '/assets/podcastEpisodes/' | absolute_url }}{{ episode.number }}.mp3</guid>
 			<description>{{ episode.description }}</description>
-			<enclosure url="{{ '/assets/podcastEpisodes/' | relative_url }}{{ episode.number }}.mp3" length="{{ episode.bytes }}" type="audio/mpeg"/>
+			<enclosure url="{{ '/assets/podcastEpisodes/' | absolute_url }}{{ episode.number }}.mp3" length="{{ episode.bytes }}" type="audio/mpeg"/>
 			<category>Information Technology</category>
 			<pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
 			<itunes:author>{{ page.club }}</itunes:author>
