@@ -44,9 +44,7 @@ episodes:
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		<itunes:image href="{{ '/assets/images/podcastImage.png' | absolute_url }}"/>
-		<itunes:category text="Technology">
-	 		<itunes:category text="Tech News"/>
-		</itunes:category>
+		<itunes:category text="Technology" />
 		{% for episode in page.episodes %}<item>
 			<title>{{ episode.number }}: {{ episode.title }}</title>
 			<link>{{ '/' | absolute_url }}</link>
