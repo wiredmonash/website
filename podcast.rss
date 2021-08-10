@@ -29,7 +29,7 @@ episodes:
 		<description>{{ page.description }}</description>
 		<link>{{ '/' | absolute_url }}</link>
 		<language>en-au</language>
-		<copyright>Copyright {{ 'now' | date: "%Y" }}</copyright>
+		<copyright>Copyright {{ 'now' | date: "%Y" }} Faculty of Information Technology Society</copyright>
 		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 		<pubDate>Sun, 8 Aug 2021 11:30:00 +1000</pubDate>
 		<docs>{{ '/' | absolute_url }}</docs>
