@@ -22,6 +22,18 @@ episodes:
   bytes: 29000000
   keywords: interview, Gavin Douch, President, apps,
   duration: '01:00:58'
+-
+  number: 2
+  title: (Almost) Failing Chemistry is a Personality Trait
+  description: This week we're joined by Devshi Janakantha, WIRED's Publications Director, to complain about finishing high school in lockdown, the desperate struggle to maintain friendships, and dreams being a doorway to an alternate reality (???)
+  extraDescription: |-
+    Including special content not broadcasted live!
+
+    Special thanks to JungBeen Lee for musical contributions.
+  date: 2021-08-17T17:00:00+10:00
+  bytes: 29000000
+  keywords: interview, Devshi Janakantha, Publications,
+  duration: '00:59:15'
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
