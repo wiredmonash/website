@@ -23,16 +23,18 @@
                             <div class="dropdown-content">
                                 {% for sublink in node.sublinks %}
                                     <li>
-                                        <a href="{{ sublink.url | relative_url }}">
-                                            {{ sublink.title }}
-                                        </a>
+                                        {% if sublink.target == _blank %}
+                                            <a href="{{ sublink.url| relative_url }}" target="_blank" rel=“noreferrer noopener”>
+                                                {{ sublink.title }}
+                                            </a>
+                                        {% else %}
+                                            <a href="{{ sublink.url | relative_url }}">
+                                                {{ sublink.title }}
+                                            </a>
+                                        {% endif %}
                                     </li>
                                 {% endfor %}
                             </div>
-                            <!-- <a href="" class="dropdown-toggle show-active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                {{ node.title }} 
-                                <span class="caret"></span>
-                            </a> -->
                         </div>
                         {% endif %}
                     {% endif %}
