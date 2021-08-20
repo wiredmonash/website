@@ -1,16 +1,42 @@
 <header class="site-header" id="site-header" class="{% if page.title == 'Home' %}header-transparent{% endif %}">
-    {% include mobile_nav.html %}
+    <!-- {% include mobile_nav.html %} -->
     <a href="{{ '/' | relative_url }}" title="WIRED Home" class="logo-link opaque-on-hover" {% if page.title == "Home" %} data-force-opaque {% endif %}>
         <img alt="WIRED" height="24" src="{{ '/assets/images/logoWhite.png' | relative_url }}" width="100">
     </a>
     <nav class="nav-site">
         <ul>
-            {% assign sorted_pages = site.pages | sort:"order" %}
+            {% assign sorted_pages = site.data.navigation | sort:"order" %}
             {% for node in sorted_pages %}
                 {% if node.order >= 1 %}
-                    <li>
-                        <a href="{{ node.url | relative_url }}" class="show-active" {% if page.url == node.url %} data-active {%endif %} data-content="{{node.title}}">{{node.title}}</a>
-                    </li>
+                    {% if node.url %}
+                        <li>
+                            <a href="{{ node.url | relative_url }}" class="show-active" {% if page.url == node.url %} data-active {%endif %} data-content="{{node.title}}">
+                                {{node.title}}
+                            </a>
+                        </li>
+                    {% else %}
+                        {% if node.sublinks %}
+                        <div class="dropdown">
+                            <button class="dropbtn">{{node.title}}
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                {% for sublink in node.sublinks %}
+                                    <li>
+                                        <a href="{{ sublink.url | relative_url }}">
+                                            {{ sublink.title }}
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            </div>
+                            <!-- <a href="" class="dropdown-toggle show-active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                {{ node.title }} 
+                                <span class="caret"></span>
+                            </a> -->
+                        </div>
+                        {% endif %}
+                    {% endif %}
+                    
                 {% endif %}
             {% endfor %}
         </ul>

@@ -1,0 +1,37 @@
+- title: Join Us
+  url: /join.html
+  order: 1
+
+- title: Publications
+  # url: /publications.html
+  order: 2
+  sublinks:
+    - title: Newsletter
+      url: https://us5.campaign-archive.com/home/?u=506a97fcddbfe2305cb213548&id=4335678ca4
+      order: 1
+    - title: Presentations
+      url: /presentations.html
+      order: 2
+    - title: Podcasts
+      url: /podcasts.html
+      order: 3
+
+- title: Events
+  url: /events.html
+  order: 3
+
+- title: Discord
+  url: /discord.html
+  order: 4
+
+- title: Sponsors
+  url: /sponsors.html
+  order: 5
+
+- title: Team
+  url: /team.html
+  order: 6  
+
+- title: Contact
+  url: /contact.html
+  order: 7

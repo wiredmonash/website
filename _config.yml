@@ -26,7 +26,7 @@ description: >-
 baseurl: '' # the subpath of your site, e.g. /blog
 url: 'https://wired.org.au' # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
-# github_username: wired-admin
+# github_username: wiredmonash
 
 # Permalink setup: without extension
 permalink: /:title
