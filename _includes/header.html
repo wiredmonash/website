@@ -23,7 +23,7 @@
                             <div class="dropdown-content">
                                 {% for sublink in node.sublinks %}
                                     <li>
-                                        {% if sublink.target == _blank %}
+                                        {% if sublink.target %}
                                             <a href="{{ sublink.url| relative_url }}" target="_blank" rel=“noreferrer noopener”>
                                                 {{ sublink.title }}
                                             </a>
