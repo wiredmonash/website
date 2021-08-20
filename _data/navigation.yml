@@ -8,6 +8,7 @@
   sublinks:
     - title: Newsletter
       url: https://us5.campaign-archive.com/home/?u=506a97fcddbfe2305cb213548&id=4335678ca4
+      target: _blank
       order: 1
     - title: Presentations
       url: /presentations.html
