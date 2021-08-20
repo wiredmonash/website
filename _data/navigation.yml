@@ -13,8 +13,8 @@
     - title: Presentations
       url: /presentations.html
       order: 2
-    - title: Podcasts
-      url: /podcasts.html
+    - title: Podcast
+      url: /podcast.html
       order: 3
 
 - title: Events

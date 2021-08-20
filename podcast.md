@@ -45,8 +45,16 @@ The WIRED Podcast team is looking for students to send in their thoughts and opi
 Record a 5-15 second audio snippet and send it over to us via
 email (<podcast@wired.org.au>), include your name and faculty if you want a shoutout in the bio or you can stay anonymous.
 
-<!-- <iframe src="https://widget.spreaker.com/player?show_id=1433865" width="100%" height="200px" frameborder="0"></iframe> -->
+<div markdown="1">
 
+### Latest episode
+<!-- --- -->
+
+</div>
+<!-- <br> -->
+<iframe src="https://open.spotify.com/embed/show/0UlSqEke0Fo3AmNfzNFbNl?t=0" width="100%" height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media" playlist-continuous="true"></iframe>
+<!-- <iframe src="https://widget.spreaker.com/player?show_id=1433865" width="100%" height="200px" frameborder="0"></iframe> -->
+<br>
 <div markdown="1">
 
 ---
