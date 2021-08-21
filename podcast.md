@@ -42,7 +42,7 @@ Affiliated with Radio Monash</i>
 </div>
 
 <h3>Share your thoughts with us!</h3>
-The WIRED Podcast team is looking for students to send in their thoughts and opinions of the past year, whether it's about the lockdown uni experience, advice to first years, mistakes to avoid, best units to take, or anything else you want to share :)
+The WIRED Podcast team is looking for students to send in their thoughts and opinions of the past year, whether it's about the lockdown uni experience, advice to first years, mistakes to avoid, best units to take, or anything else you want to share :smile:
 Record a 5-15 second audio snippet and send it over to us via
 email (<podcast@wired.org.au>), include your name and faculty if you want a shoutout in the bio or you can stay anonymous.
 
