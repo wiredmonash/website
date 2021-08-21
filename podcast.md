@@ -35,9 +35,10 @@ Affiliated with Radio Monash</i>
 <div float="left" align="middle" margin="10px">
     {% for platform in page.platforms %}
       <a href="{{ platform.url }}" target="_blank" rel="noreferrer noopener">
-      <img src="{{ platform.image }}" height="50" style="margin-right:20px"/>
+      <img src="{{ platform.image }}" height="50" style="margin-top:10px ;margin-right:10px; margin-left:10px"/>
       </a>
-    {% endfor %}
+    {% endfor %}<br>
+    <div style="color:#6e297e; margin:10px; margin-bottom:20px"><b>Subscribe to our podcast!</b></div>
 </div>
 
 <h3>Share your thoughts with us!</h3>

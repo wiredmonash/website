@@ -8,7 +8,7 @@
             <a href="{{ '/' | relative_url }}" title="WIRED Home" class="logo-link opaque-on-hover" {% if page.title == "Home" %} data-force-opaque {% endif %}>
                 <img alt="WIRED" height="24" src="assets/images/logoWhite.png" width="100"></a>
         </li>
-        {% assign sorted_pages = site.pages | sort:"order" %}
+        {% assign sorted_pages = site.data.navigation | sort:"order" %}
         {% for node in sorted_pages %}
             {% if node.order >= 1 %}
                 <li class="mobile-menu__default-li">
