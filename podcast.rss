@@ -4,51 +4,8 @@ club: Monash WIRED
 email: podcast@wired.org.au
 description: The Official Monash WIRED podcast. Want to know the best uni hacks, uncover hidden conspiracies, and stay connected to the latest news around the Monash campus? Plug in your headphones and stay WIRED_in. Hosted by Edison Vong and Ruoqi Wang.
 
-episodes:
--
-  number: 1
-  title: FIT1047 lovers all hate Shakespeare
-  description: This week we sit down with WIRED President, FIT1047 fanboy, and Shakespeare hater, Gavin Douch to chat about living in Shepparton, turning spreadsheets into apps, and making the most out of University.
-  extraDescription: |-
-    This week we sit down with WIRED President, FIT1047 fanboy, and Shakespeare hater, Gavin Douch to chat about living in Shepparton, turning spreadsheets into apps, and making the most out of University.
-    Including special content not broadcasted live!
-
-    Featuring:
-    • Ananya, Faculty of Arts
-    • Patrick, Faculty of Information Technology
-    • Vaasanthi, Faculty of Arts
-
-    Special thanks to JungBeen Lee for musical contributions.
-  date: 2021-08-10T17:00:00+10:00
-  bytes: 29000000
-  keywords: interview, Gavin Douch, President, apps,
-  duration: '01:00:58'
--
-  number: 2
-  title: (Almost) Failing Chemistry is a Personality Trait
-  description: This week we're joined by Devshi Janakantha, WIRED's Publications Director, to complain about finishing high school in lockdown, the desperate struggle to maintain friendships, and dreams being a doorway to an alternate reality (???)
-  extraDescription: |-
-    This week we're joined by Devshi Janakantha, WIRED's Publications Director, to complain about finishing high school in lockdown, the desperate struggle to maintain friendships, and dreams being a doorway to an alternate reality (???)
-
-    Special thanks to JungBeen Lee for musical contributions.
-  date: 2021-08-17T17:00:00+10:00
-  bytes: 29000000
-  keywords: interview, Devshi Janakantha, Publications,
-  duration: '00:59:15'
--
-  number: 3
-  title: Doing Pharmacy is a Gateway Drug
-  description: For the first episode in our Degree Exploration series we've invited Riko Ngo, to talk to us about his massive brain, doing Pharmacy before Medicine, petty Taekwondo drama, and the hidden conspiracies behind Big Pharma.
-  extraDescription: |-
-    Degree Exploration: Bachelor of Pharmacy (Honours) into Bachelor of Medical Science and Doctor of Medicine
-    For the first episode in our Degree Exploration series we've invited Riko Ngo, to talk to us about his massive brain, doing Pharmacy before Medicine, petty Taekwondo drama, and the hidden conspiracies behind Big Pharma.
-
-    Special thanks to JungBeen Lee for musical contributions.
-  date: 2021-08-23T17:00:00+10:00
-  bytes: 27000000
-  keywords: interview, Riko Ngo, Degree Exploration,
-  duration: '00:58:02'
 ---
+
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
 	<channel>
@@ -71,7 +28,7 @@ episodes:
 		<itunes:explicit>No</itunes:explicit>
 		<itunes:image href="{{ '/assets/images/podcastImage.png' | absolute_url }}"/>
 		<itunes:category text="Technology" />
-		{% for episode in page.episodes %}<item>
+		{% for episode in site.data.podcast %}<item>
 			<title>{{ episode.number }}: {{ episode.title }}</title>
 			<link>{{ '/' | absolute_url }}</link>
 			<guid>{{ '/assets/podcastEpisodes/' | absolute_url }}{{ episode.number }}.mp3</guid>

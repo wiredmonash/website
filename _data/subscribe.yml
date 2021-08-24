@@ -1,0 +1,15 @@
+- name: YouTube
+  image: ../assets/images/icons/youtube.png
+  url: https://www.youtube.com/channel/UCKl61MY-083KCOfqT9ctXsQ
+
+- name: Spotify
+  image: ../assets/images/icons/spotify.png
+  url: https://open.spotify.com/show/0UlSqEke0Fo3AmNfzNFbNl?si=nJJzqmnFTtmrM14DrTc6-w&dl_branch=1&fbclid=IwAR2IsML08wRBQvqvP_hRjvjAU_-Xw-1zZKJp-WNgFwCD3i56PRDJy2-EQQc&nd=1
+
+- name: SoundCloud
+  image: ../assets/images/icons/soundcloud.png
+  url: https://soundcloud.com/user-595902769?fbclid=IwAR3vEUM1ZiXLJa1fj7jOPKx3GuKvHa_UTviNHM6ZhyZjJQgGgarDUgYlii0
+
+- name: RSS
+  image: ../assets/images/icons/rss-feed.png
+  url: ../podcast.rss

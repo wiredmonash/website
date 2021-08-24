@@ -2,20 +2,16 @@
 layout: default
 
 platforms:
-- 
-  name: YouTube
+- name: YouTube
   image: ./assets/images/icons/youtube.png
   url: https://www.youtube.com/channel/UCKl61MY-083KCOfqT9ctXsQ
-- 
-  name: Spotify
+- name: Spotify
   image: ./assets/images/icons/spotify.png
   url: https://open.spotify.com/show/0UlSqEke0Fo3AmNfzNFbNl?si=nJJzqmnFTtmrM14DrTc6-w&dl_branch=1&fbclid=IwAR2IsML08wRBQvqvP_hRjvjAU_-Xw-1zZKJp-WNgFwCD3i56PRDJy2-EQQc&nd=1
-- 
-  name: SoundCloud
+- name: SoundCloud
   image: ./assets/images/icons/soundcloud.png
   url: https://soundcloud.com/user-595902769?fbclid=IwAR3vEUM1ZiXLJa1fj7jOPKx3GuKvHa_UTviNHM6ZhyZjJQgGgarDUgYlii0
-- 
-  name: RSS
+- name: RSS
   image: ./assets/images/icons/rss-feed.png
   url: ./podcast.rss
 ---
@@ -33,9 +29,9 @@ Affiliated with Radio Monash</i>
 </p>
 
 <div float="left" align="middle" margin="10px">
-    {% for platform in page.platforms %}
+    {% for platform in site.data.subscribe %}
       <a href="{{ platform.url }}" target="_blank" rel="noreferrer noopener">
-      <img src="{{ platform.image }}" height="50" style="margin-top:10px ;margin-right:10px; margin-left:10px"/>
+      <img src="{{ platform.image }}" height="50" style="margin-top:10px; margin-right:10px; margin-left:10px"/>
       </a>
     {% endfor %}<br>
     <div style="color:#6e297e; margin:10px; margin-bottom:20px"><b>Subscribe to our podcast!</b></div>
@@ -48,14 +44,20 @@ email (<podcast@wired.org.au>), include your name and faculty if you want a shou
 
 <div markdown="1">
 
-### Latest episode
-<!-- --- -->
-
+### Episodes
 </div>
-<!-- <br> -->
-<iframe src="https://open.spotify.com/embed/show/0UlSqEke0Fo3AmNfzNFbNl?t=0" width="100%" height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media" playlist-continuous="true"></iframe>
-<!-- <iframe src="https://widget.spreaker.com/player?show_id=1433865" width="100%" height="200px" frameborder="0"></iframe> -->
+
+{% assign sorted_episodes = site.data.podcast | sort:"number" | reverse %}
+{% for item in sorted_episodes %}
+  {{ item.iframe }}
+{% endfor %}
+
+
+<!-- For displaying latest episode of Spotify -->
+<!-- <iframe src="https://open.spotify.com/embed/show/0UlSqEke0Fo3AmNfzNFbNl?t=0" width="100%" height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media" playlist-continuous="true"></iframe> -->
+
 <br>
+
 <div markdown="1">
 
 ---

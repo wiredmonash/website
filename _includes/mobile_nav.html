@@ -10,10 +10,11 @@
         </li>
         {% assign sorted_pages = site.data.navigation | sort:"order" %}
         {% for node in sorted_pages %}
-            {% if node.order >= 1 %}
-                <li class="mobile-menu__default-li">
-                    <a href="{{ node.url | relative_url }}" class="show-active" {% if page.url == node.url %} data-active {%endif %} data-content="{{node.title}}">{{node.title}}</a>
-                </li>
+            <li class="mobile-menu__default-li">
+                <a href="{{ node.url | relative_url }}" class="show-active" {% if page.url == node.url %} data-active {%endif %} data-content="{{node.title}}">
+                    {{node.title}}
+                </a>
+            </li>
             {% endif %}
         {% endfor %}
         <li class="mobile-menu__social-li">
