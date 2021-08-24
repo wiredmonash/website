@@ -47,11 +47,19 @@ email (<podcast@wired.org.au>), include your name and faculty if you want a shou
 ### Episodes
 </div>
 
-{% assign sorted_episodes = site.data.podcast | sort:"number" | reverse %}
-{% for item in sorted_episodes %}
-  {{ item.iframe }}
-{% endfor %}
+<style>
+.boxed {
+  background: #6e297e;
+  border-radius: 12px;
+}
+</style>
 
+<div class="boxed">
+  {% assign sorted_episodes = site.data.podcast | sort:"number" | reverse %}
+  {% for item in sorted_episodes %}
+    {{ item.iframe }}
+  {% endfor %}
+</div>
 
 <!-- For displaying latest episode of Spotify -->
 <!-- <iframe src="https://open.spotify.com/embed/show/0UlSqEke0Fo3AmNfzNFbNl?t=0" width="100%" height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media" playlist-continuous="true"></iframe> -->
