@@ -15,7 +15,7 @@ extra_css:
 <!-- ## Discord
 <img src="assets/images/icons/logo-discord.svg" alt="discord" width="20"/> -->
 
-[Discord](https://discord.com) is a free video, voice and text chat service.
+<a href="https://discord.com" target="_blank">Discord</a> is a free video, voice and text chat service.
 WIRED has its own Discord server which has channels for:
 - Job listings
 - Interactions with our sponsors
@@ -30,5 +30,5 @@ Note that these rules are subject to change as deemed appropriate by WIRED.
 - Be nice. Bad faith participation, insults, and unkindness will result in a removal from the Discord.
 
 ### Join the Discord!
-[Click here to join in.](https://discord.gg/WNUDsjQ)
+<a href="https://discord.gg/WNUDsjQ"  target="_blank">Click here to join in.</a>
 </div>

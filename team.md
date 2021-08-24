@@ -29,7 +29,7 @@ extra_css:
   <div align="center">
     {% if team.recruiting_form %}
       <div style="padding-bottom:12px">Currently recruiting » 
-        <a href="{{ team.recruiting_form | relative_url }}" style="padding-bottom:10px">
+        <a href="{{ team.recruiting_form | relative_url }}" style="padding-bottom:10px" target="_blank">
           Click here to apply
         </a>
       </div>
@@ -38,7 +38,7 @@ extra_css:
   
   <div align="center">
     <i>Governed by the 
-      <a href="{{ team.constitution_url | relative_url }}">
+      <a href="{{ team.constitution_url | relative_url }}" target="_blank">
         {{ team.constitution_title }}
       </a>
     </i>
@@ -46,7 +46,7 @@ extra_css:
      • <i>Email: <a href="mailto:{{ team.email }}">{{ team.email }}</a></i>
     {% endif %}
     {% if team.website %}
-     • <i>Visit <a href="{{team.website}}">website</a></i>
+     • <i>Visit <a href="{{team.website}}" target="_blank">website</a></i>
     {% endif %}
   </div>
   <br>

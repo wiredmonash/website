@@ -25,7 +25,7 @@ Want to know the best Uni hacks? Uncover hidden conspiracies? And stay connected
 Plug in your headphones and stay WIRED_in!
 <p>
 <i>Hosted by Edison Vong and Ruoqi Wang<br>
-Affiliated with Radio Monash</i>
+Affiliated with <a href="https://www.radiomonash.net/" target="_blank">Radio Monash</a></i>
 </p>
 
 <div float="left" align="middle" margin="10px">

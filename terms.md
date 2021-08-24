@@ -6,7 +6,7 @@
 ### Terms of Reference
 - [Industry Subcommittee](./assets/docs/indSubToR.pdf)
 - [Publications Subcommittee](./assets/docs/pubSubToR.pdf)
-- [EducationSubcommittee](./assets/docs/eduSubToR.pdf)
+- [Education Subcommittee](./assets/docs/eduSubToR.pdf)
 - [Events Subcommittee](./assets/docs/eveSubToR.pdf)
 
 ### Malaysia Charter
