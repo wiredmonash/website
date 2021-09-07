@@ -52,6 +52,11 @@ email (<podcast@wired.org.au>), include your name and faculty if you want a shou
   background: #6e297e;
   border-radius: 12px;
 }
+
+.panel {
+  background: #870099;
+  width: 100%;
+}
 </style>
 
 <div class="boxed">
@@ -72,6 +77,6 @@ email (<podcast@wired.org.au>), include your name and faculty if you want a shou
 
 </div>
 <br>
-<div align="middle">
+<div align="middle" class="panel">
 <img src="./assets/images/podcast.gif" width="200"/>
 </div>
