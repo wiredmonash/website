@@ -156,6 +156,10 @@
   constitution_title: Education Subcommittee Terms of Reference
   constitution_url: ../assets/docs/eduSubToR.pdf
   members:
+    - name: Amesh Fernando
+      title: Education Director
+      image: ameshFernando.jpg
+      email: amesh.fernando@wired.org.au
 
 - team: Events Subcommittee
   email: 
