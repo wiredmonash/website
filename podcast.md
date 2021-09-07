@@ -48,23 +48,50 @@ email (<podcast@wired.org.au>), include your name and faculty if you want a shou
 </div>
 
 <style>
-.boxed {
-  background: #6e297e;
-  border-radius: 12px;
-}
+  #boxed-parent {
+    overflow: hidden;
+    /* width: 100%;
+    height: 100%; */
+    /* position: relative; */
+  }
+  #boxed {
+    /* position: absolute; */
+    background: #6e297e;
+    border-radius: 12px;
+    max-height: 400px;
+    /* overflow: hidden; */
+    overflow-y: scroll;
+    /* box-sizing: content-box; */
+  }
 
-.panel {
-  background: #870099;
-  width: 100%;
-}
+  /* hide scrollbar but allow scrolling */
+  .container {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: auto; 
+    background: #6e297e;
+    border-radius: 12px;
+    max-height: 400px;
+  }
+
+  .container::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+
+  .panel {
+    background: #870099;
+    width: 100%;
+  }
 </style>
 
-<div class="boxed">
-  {% assign sorted_episodes = site.data.podcast | sort:"number" | reverse %}
-  {% for item in sorted_episodes %}
-    {{ item.iframe }}
-  {% endfor %}
-</div>
+<!-- <div class="boxed-parent"> -->
+  <div class="container">
+    {% assign sorted_episodes = site.data.podcast | sort:"number" | reverse %}
+    {% for item in sorted_episodes %}
+      {{ item.iframe }}
+    {% endfor %}
+  </div>
+<!-- </div> -->
 
 <!-- For displaying latest episode of Spotify -->
 <!-- <iframe src="https://open.spotify.com/embed/show/0UlSqEke0Fo3AmNfzNFbNl?t=0" width="100%" height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media" playlist-continuous="true"></iframe> -->
