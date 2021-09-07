@@ -1,27 +1,41 @@
 ---
 layout: default
-
-platforms:
-- name: YouTube
-  image: ./assets/images/icons/youtube.png
-  url: https://www.youtube.com/channel/UCKl61MY-083KCOfqT9ctXsQ
-- name: Spotify
-  image: ./assets/images/icons/spotify.png
-  url: https://open.spotify.com/show/0UlSqEke0Fo3AmNfzNFbNl?si=nJJzqmnFTtmrM14DrTc6-w&dl_branch=1&fbclid=IwAR2IsML08wRBQvqvP_hRjvjAU_-Xw-1zZKJp-WNgFwCD3i56PRDJy2-EQQc&nd=1
-- name: SoundCloud
-  image: ./assets/images/icons/soundcloud.png
-  url: https://soundcloud.com/user-595902769?fbclid=IwAR3vEUM1ZiXLJa1fj7jOPKx3GuKvHa_UTviNHM6ZhyZjJQgGgarDUgYlii0
-- name: RSS
-  image: ./assets/images/icons/rss-feed.png
-  url: ./podcast.rss
 ---
+
+<style>
+  /* hide scrollbar but allow scrolling */
+  .container {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: auto; 
+    background: #6e297e;
+    border-radius: 12px;
+    max-height: 456px; /* 3 episodes displayed without scrolling */
+  }
+
+  .container::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+
+  .panel {
+    background: #870099;
+    width: 100%;
+  }
+
+  .banner {
+    background: #66107B;
+    width: 100%;
+    padding: 4px;
+  }
+</style>
+
 <!-- Logo -->
-<div align="left">
+<div align="center" class="banner">
 <img src="./assets/images/wired_in.png" alt="WIRED_in Logo" width="250"/>
 </div>
 
-## The Official WIRED Podcast  
-Want to know the best Uni hacks? Uncover hidden conspiracies? And stay connected to the latest news around the Monash Campus?
+<h2 align="middle">The Official WIRED Podcast!</h2>  
+Want to know the best Uni hacks? :computer: Uncover hidden conspiracies? :alien: And stay connected to the latest news around the Monash Campus?  
 Plug in your headphones and stay WIRED_in!
 <p>
 <i>Hosted by Edison Vong and Ruoqi Wang<br>
@@ -47,54 +61,13 @@ email (<podcast@wired.org.au>), include your name and faculty if you want a shou
 ### Episodes
 </div>
 
-<style>
-  #boxed-parent {
-    overflow: hidden;
-    /* width: 100%;
-    height: 100%; */
-    /* position: relative; */
-  }
-  #boxed {
-    /* position: absolute; */
-    background: #6e297e;
-    border-radius: 12px;
-    max-height: 400px;
-    /* overflow: hidden; */
-    overflow-y: scroll;
-    /* box-sizing: content-box; */
-  }
 
-  /* hide scrollbar but allow scrolling */
-  .container {
-    -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
-    overflow-y: auto; 
-    background: #6e297e;
-    border-radius: 12px;
-    max-height: 400px;
-  }
-
-  .container::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
-  }
-
-  .panel {
-    background: #870099;
-    width: 100%;
-  }
-</style>
-
-<!-- <div class="boxed-parent"> -->
-  <div class="container">
-    {% assign sorted_episodes = site.data.podcast | sort:"number" | reverse %}
-    {% for item in sorted_episodes %}
-      {{ item.iframe }}
-    {% endfor %}
-  </div>
-<!-- </div> -->
-
-<!-- For displaying latest episode of Spotify -->
-<!-- <iframe src="https://open.spotify.com/embed/show/0UlSqEke0Fo3AmNfzNFbNl?t=0" width="100%" height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media" playlist-continuous="true"></iframe> -->
+<div class="container">
+  {% assign sorted_episodes = site.data.podcast | sort:"number" | reverse %}
+  {% for item in sorted_episodes %}
+    {{ item.iframe }}
+  {% endfor %}
+</div>
 
 <br>
 
