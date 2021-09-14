@@ -62,11 +62,27 @@ email (<podcast@wired.org.au>), include your name and faculty if you want a shou
 </div>
 
 
-<div class="container">
+<!-- <div class="container">
   {% assign sorted_episodes = site.data.podcast | sort:"number" | reverse %}
   {% for item in sorted_episodes %}
     {{ item.iframe }}
   {% endfor %}
+</div> -->
+
+<div class="container" style="padding:10px 32px 10px 32px">
+{% assign sorted_episodes = site.data.podcast | sort:"number" | reverse %}
+{% for episode in sorted_episodes %}
+  <h3 style="color:white">{{ episode.number }}. {{ episode.title }}</h3>
+  <p style="font-family:'Courier New';color:white">{{ episode.description }}</p>
+  <audio controls style="width: 100%;">
+    {% assign base = './assets/podcastEpisodes/' %}
+    {% assign ext = 'mp3' %}
+    {% assign path = base | append: episode.number | append: '.' | append: ext %}
+    <source align="center" src='{{ path }}' type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <hr>
+{% endfor %}
 </div>
 
 <br>
