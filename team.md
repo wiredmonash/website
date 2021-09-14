@@ -13,7 +13,7 @@ extra_css:
       <div class="committee-card">
         <div class="image-cropper">
           <a href="mailto:{{ member.email }}">
-            <img class="committee-image" src="assets/images/team/{{ member.image }}" alt="{{ member.name }}: {{ member.title }}">
+            <img class="committee-image" src="assets/images/team/{{ member.image }}" title="{{ member.email }}" alt="{{ member.name }}: {{ member.title }}">
           </a>
         </div>
         <div class="committee-text">
