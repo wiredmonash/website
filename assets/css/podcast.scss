@@ -1,0 +1,29 @@
+---
+---
+
+@import "shared";
+
+/* hide scrollbar but allow scrolling */
+.container {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: auto; 
+    background: $wired-purple;
+    border-radius: 12px;
+    max-height: 456px; /* 3 episodes displayed without scrolling */
+}
+
+.container::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+.panel {
+    background: $wired-purple;
+    width: 100%;
+}
+
+.banner {
+    background: $wired-purple;
+    width: 100%;
+    padding: 4px;
+}

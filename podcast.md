@@ -1,33 +1,8 @@
 ---
 layout: default
+extra_css:
+- podcast.css
 ---
-
-<style>
-  /* hide scrollbar but allow scrolling */
-  .container {
-    -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
-    overflow-y: auto; 
-    background: #6e297e;
-    border-radius: 12px;
-    max-height: 456px; /* 3 episodes displayed without scrolling */
-  }
-
-  .container::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
-  }
-
-  .panel {
-    background: #870099;
-    width: 100%;
-  }
-
-  .banner {
-    background: #66107B;
-    width: 100%;
-    padding: 4px;
-  }
-</style>
 
 <!-- Logo -->
 <div align="center" class="banner">
@@ -94,5 +69,5 @@ email (<podcast@wired.org.au>), include your name and faculty if you want a shou
 </div>
 <br>
 <div align="middle" class="panel">
-<img src="./assets/images/podcast.gif" width="200"/>
+<img src="./assets/images/WIRED_in.gif" width="200"/>
 </div>
