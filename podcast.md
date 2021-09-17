@@ -6,7 +6,7 @@ extra_css:
 
 <!-- Logo -->
 <div align="center" class="banner">
-<img src="./assets/images/wired_in.png" alt="WIRED_in Logo" width="250"/>
+<img src="./assets/images/WIRED_in_transparent_logo.png" alt="WIRED_in Logo" width="250"/>
 </div>
 
 <h2 align="middle">The Official WIRED Podcast!</h2>  
