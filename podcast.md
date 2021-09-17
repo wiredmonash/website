@@ -69,5 +69,5 @@ email (<podcast@wired.org.au>), include your name and faculty if you want a shou
 </div>
 <br>
 <div align="middle" class="panel">
-<img src="./assets/images/WIRED_in.gif" width="200"/>
+<img src="./assets/images/WIRED_in_clear.gif" width="200"/>
 </div>
