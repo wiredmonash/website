@@ -8,30 +8,30 @@
       title: President & ACSA President
       image: gavinDouch.jpg
       email: president@wired.org.au
-    - name: Vibhas Kamal
-      title: Vice President
-      image: vibhasKamal.jpg
-      email: vicepresident@wired.org.au
-    - name: Kanako Bouyer
+    # - name: Joshua Pelach
+    #   title: Vice President
+    #   image: joshuaPelach.jpg
+    #   email: vicepresident@wired.org.au
+    - name: Devshi Janakantha
       title: Secretary
-      image: kanakoBouyer.jpg
+      image: devshiJanakantha.png
       email: secretary@wired.org.au
-    - name: Aaron Chao
-      title: Treasurer
-      image: aaronChao.jpg
-      email: treasurer@wired.org.au
-    - name: Keaton Tang
-      title: General Representative
-      image: keatonTang.jpg
-      email: genreps@wired.org.au
     - name: Ryhan Joshi
-      title: General Representative
+      title: Treasurer
       image: ryhanJoshi.jpg
+      email: treasurer@wired.org.au
+    - name: Aaron Chao
+      title: General Representative
+      image: aaronChao.jpg
       email: genreps@wired.org.au
     - name: Jeremy Chrimes
       title: General Representative
       image: jeremyChrimes.jpg
       email: genreps@wired.org.au
+    # - name: Dimitris Gahtidis
+    #   title: General Representative
+    #   image: dimitrisGahtidis.jpg
+    #   email: genreps@wired.org.au
 
 - team: Industry Subcommittee
   email: industry@wired.org.au
@@ -66,10 +66,10 @@
       title: Publications Director
       image: devshiJanakantha.png
       email: pub.director@wired.org.au
-    - name: Michelle Oeum
-      title: Publications Secretary
-      image: michelleOeum.jpg
-      email: pub.secretary@wired.org.au
+    # - name: Michelle Oeum
+    #   title: Publications Secretary
+    #   image: michelleOeum.jpg
+    #   email: pub.secretary@wired.org.au
     - name: Tina Jiang
       title: Newsletter Editor
       image: tinaJiang.jpg
