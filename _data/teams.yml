@@ -28,10 +28,10 @@
       title: General Representative
       image: jeremyChrimes.jpg
       email: genreps@wired.org.au
-    # - name: Dimitris Gahtidis
-    #   title: General Representative
-    #   image: dimitrisGahtidis.jpg
-    #   email: genreps@wired.org.au
+    - name: Dimitris Gahtidis
+      title: General Representative
+      image: dimitrisGahtidis.jpg
+      email: genreps@wired.org.au
 
 - team: Industry Subcommittee
   email: industry@wired.org.au
