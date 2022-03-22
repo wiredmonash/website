@@ -4,33 +4,25 @@
   constitution_url: ../assets/docs/constitution.pdf
   recruiting_form: 
   members:
-    - name: Gavin Douch
-      title: President & ACSA President
-      image: gavinDouch.jpg
+    - name: Ryhan Joshi
+      title: President
+      image: ryhanJoshi.jpg
       email: president@wired.org.au
     - name: Joshua Pelach
       title: Vice President
       image: joshuaPelach.jpg
       email: vicepresident@wired.org.au
+    - name: Edison Vong
+      title: Treasurer 
+      image: edisonVong.jpg
+      email: treasurer@wired.org.au
     - name: Devshi Janakantha
       title: Secretary
       image: devshiJanakantha.png
       email: secretary@wired.org.au
-    - name: Ryhan Joshi
-      title: Treasurer
-      image: ryhanJoshi.jpg
-      email: treasurer@wired.org.au
-    - name: Aaron Chao
-      title: General Representative
-      image: aaronChao.jpg
-      email: genreps@wired.org.au
     - name: Jeremy Chrimes
       title: General Representative
       image: jeremyChrimes.jpg
-      email: genreps@wired.org.au
-    - name: Dimitris Gahtidis
-      title: General Representative
-      image: dimitrisGahtidis.jpg
       email: genreps@wired.org.au
     - name: Amesh Fernando
       title: General Representative
