@@ -4,175 +4,35 @@
   constitution_url: ../assets/docs/constitution.pdf
   recruiting_form: 
   members:
-    - name: Ryhan Joshi
+    - name: Dilhan Simsek
       title: President
-      image: ryhanJoshi.jpg
-      email: president@wired.org.au
-    - name: Joshua Pelach
+      image: dilhanSimsek.jpg
+      email: dilhan.simsek@wired.org.au
+    - name: Andrew Li
       title: Vice President
-      image: joshuaPelach.jpg
+      image: andrewLi.jpg
       email: vicepresident@wired.org.au
-    - name: Edison Vong
+    - name: Danny Vu
       title: Treasurer 
-      image: edisonVong.jpg
+      image: dannyVu.jpg
       email: treasurer@wired.org.au
-    - name: Devshi Janakantha
+    - name: Michelle Hong
       title: Secretary
-      image: devshiJanakantha.png
+      image: michelleHong.jpg
       email: secretary@wired.org.au
+    - name: Thien Autran
+      title: General Representative
+      image: thienAutran.jpg
+      email: genreps@wired.org.au
     - name: Jeremy Chrimes
       title: General Representative
       image: jeremyChrimes.jpg
       email: genreps@wired.org.au
-    - name: Amesh Fernando
+    - name: Rohan Kalanje
       title: General Representative
-      image: ameshFernando.jpg
+      image: rohanKalanje.jpg
       email: genreps@wired.org.au
-    - name: Calvin Foo 
+    - name: James Lew
       title: General Representative
+      image: jamesLew.jpg
       email: genreps@wired.org.au
-
-
-
-- team: Industry Subcommittee
-  email: industry@wired.org.au
-  constitution_title: Industry Subcommittee Terms of Reference
-  constitution_url: ../assets/docs/indSubToR.pdf
-  recruiting_form: 
-  members:
-    - name: Scott Yip
-      title: Industry Director
-      image: scottYip.png
-      email: ind.director@wired.org.au
-    - name: Jonathan Lopez
-      title: Industry Secretary
-      image: jonathanLopez.jpg
-      email: ind.secretary@wired.org.au
-    - name: Maureen Priscilla Rusli
-      title: Sponsorship Officer
-      image: maureenPriscillaRusli.png
-      email: sponsorship@wired.org.au
-    - name: Darcy Myring
-      title: Careers Officer
-      image: darcyMyring.png
-      email: careers.officer@wired.org.au
-
-- team: Publications Subcommittee
-  email: publications@wired.org.au
-  recruiting_form: https://docs.google.com/forms/d/e/1FAIpQLSdINeypsblr8Zk0dUgld43SPJLu0qLiLut5_E26bOzKgMDrBQ/viewform?usp=sf_link
-  constitution_title: Publications Subcommittee Terms of Reference
-  constitution_url: ../assets/docs/pubSubToR.pdf
-  members:
-    - name: Devshi Janakantha
-      title: Publications Director
-      image: devshiJanakantha.png
-      email: pub.director@wired.org.au
-    # - name: Michelle Oeum
-    #   title: Publications Secretary
-    #   image: michelleOeum.jpg
-    #   email: pub.secretary@wired.org.au
-    - name: Tina Jiang
-      title: Newsletter Editor
-      image: tinaJiang.jpg
-      email: newsletter.editor@wired.org.au
-    - name: Ruoqi Wang
-      title: Podcast Team Member
-      image: ruoqiWang.jpg
-      email: podcast@wired.org.au
-    - name: Edison Vong
-      title: Podcast Team Member
-      image: edisonVong.jpg
-      email: podcast@wired.org.au
-    - name: Zhou Kong
-      title: Social Media Officer
-      image: zhouKong.jpg
-      email: socialmedia.officers@wired.org.au
-    - name: Sao Jun Hew
-      title: Social Media Officer
-      image: saoJunHew.jpg
-      email: socialmedia.officers@wired.org.au
-    - name: Yashdeep S Dahiya
-      title: Technical Officer
-      image: yashdeepDahiya.png
-      email: technical.officer@wired.org.au
-    - name: Nguyen Manh Hai Vo
-      title: Design Officer
-      image: haiVo.jpg
-      email: design@wired.org.au
-
-- team: Malaysia Chapter Board
-  email: malaysia.board@wired.org.au
-  constitution_title: Malaysia Charter
-  constitution_url: ../assets/docs/malaysiaCharter.pdf
-  recruiting_form: 
-  members:
-    - name: Tze Yuan Koay
-      title: Cochair (External)
-      image: tzeYuanKoay.jpg
-      email: mal.head@wired.org.au
-    - name: Yi Chuan Tey
-      title: Cochair (Internal)
-      image: chuanTeyYi.jpg
-      email: mal.head@wired.org.au
-    - name: Avantika Mishra
-      title: Marketing Lead
-      image: avantikaMishra.jpg
-      email: mal.marketing@wired.org.au
-    - name: Zolyn Lang
-      title: Marketing Associate
-      image: zolynLang.jpg
-      email: mal.marketing@wired.org.au
-    - name: Ho Suu Yin
-      title: Marketing Associate
-      image: suuYinHo.png
-      email: mal.marketing@wired.org.au
-    - name: Shamrethan Balendran
-      title: Marketing Associate
-      image: shamrethanBalendran.png
-      email: mal.marketing@wired.org.au
-    - name: Yoong Kiat Tan
-      title: Operations Lead
-      image: yoongKiatTan.jpg
-      email: mal.operations@wired.org.au
-    - name: Jian Hui Lee
-      title: Operations Associate
-      image: jianHuiLee.jpg
-      email: mal.operations@wired.org.au
-
-- team: MCPC Executive Team
-  website: https://blog.monashicpc.com/
-  constitution_title: MCPC Constitution
-  constitution_url: https://blog.monashicpc.com/constitution/
-  recruiting_form: 
-  members:
-    - name: Jackson Goerner
-      title: President & Secretary
-      image: jacksonGoerner.jpg
-    - name: Ali Toosi
-      title: Vice President & Academic Representative
-      image: aliToosi.jpg
-    - name: Amin Sakzad
-      title: Treasurer
-      image: aminSakzad.png
-
-- team: Education Subcommittee
-  email: 
-  recruiting_form: https://docs.google.com/forms/d/e/1FAIpQLSdINeypsblr8Zk0dUgld43SPJLu0qLiLut5_E26bOzKgMDrBQ/viewform?usp=sf_link
-  constitution_title: Education Subcommittee Terms of Reference
-  constitution_url: ../assets/docs/eduSubToR.pdf
-  members:
-    - name: Amesh Fernando
-      title: Education Director
-      image: ameshFernando.jpg
-      email: edu.director@wired.org.au
-
-- team: Events Subcommittee
-  email: 
-  recruiting_form: https://docs.google.com/forms/d/e/1FAIpQLSdINeypsblr8Zk0dUgld43SPJLu0qLiLut5_E26bOzKgMDrBQ/viewform?usp=sf_link
-  constitution_title: Events Subcommittee Terms of Reference
-  constitution_url: ../assets/docs/eveSubToR.pdf
-  members:
-    - name: Chaitanya Srinevas
-      title: Events Director
-      image: chaitanyaSrinevas.jpg
-      email: eve.director@wired.org.au
